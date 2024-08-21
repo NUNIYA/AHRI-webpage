@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Digital Platform for Rabies Prevention</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F3F3F3; /* Light gray background */
+      color: #333;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #008370; /* Your brand color */
+      color: #fff;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #00796b; /* Updated color for the top bar */
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    .contact-info a i {
+      margin-right: 5px;
+    }
+
+    .social-links {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-links a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .social-links a i {
+      font-size: 20px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: flex-end; /* Align navigation to the right */
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #008370;
+      position: sticky;
+      top: 0;
+      z-index: 1000; /* Ensures it stays on top of other content */
+    }
+
+    nav {
+      flex: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      justify-content: flex-end; /* Align navigation items to the right */
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .nav-links li a i {
+      margin-right: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 40px 20px;
+      background-color: #8C5C5C; /* Softer reddish-brown */
+      color: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero-text {
+      flex: 1;
+      max-width: 50%; /* Proportional size */
+    }
+
+    .hero-image {
+      flex: 1;
+      text-align: right;
+      padding-left: 20px;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 20px;
+    }
+
+    .read-more {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .cta-button {
+      background-color: #00796b; /* Matching navigation bar color */
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      display: inline-block;
+    }
+
+    .cta-button:hover {
+      background-color: #008370;
+      color: #fff;
+    }
+
+    /* Main Content Styles */
+    section.container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #8C5C5C; /* Matching background color */
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #fff; /* Matching the new section background */
+    }
+
+    .section-content {
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 280px;
+      background-color: #f7f7f7;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .column h3 {
+      font-size: 20px;
+      color: #7A3D3D; /* Matching hero section color */
+      margin-bottom: 10px;
+    }
+
+    .column ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .column ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #008370;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="contact-info">
+        <a href="mailto:xxx@rabie.org"><i class="fas fa-envelope"></i> xxx@rabie.org</a>
+        <a href="tel:+251-9000000"><i class="fas fa-phone"></i> +251-9000000</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="nav-container">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+          <li><a href="#"><i class="fas fa-tools"></i> D-Tools</a></li>
+          <li><a href="#"><i class="fas fa-project-diagram"></i> Projects</a></li>
+          <li><a href="#"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="#"><i class="fas fa-blog"></i> Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="background-color: #8C5C5C;">
+    <div class="hero-text" style="max-width: 50%;">
+      <h2>ONE DIGITAL HEALTH TOOL FOR RABIES CONTROL</h2>
+      <p>This initiative aims to streamline rabies control and prevention by integrating data and resources into a unified platform, leveraging a One Health approach.</p>
+      <div class="read-more">
+        <a href="#" class="cta-button">Click Me</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="rabies.png" alt="Rabies Illustration">
+    </div>
+  </section>
+
+  <section class="container" style="background-color: #8C5C5C;">
+    <h2 class="section-title">WHY ONE DIGITAL PLATFORM</h2>
+    <div class="section-content">
+      <p>Our digital platform integrates various sectors to enhance rabies prevention and control. By linking human, animal, and environmental health data, we aim to provide a comprehensive approach to tackling rabies.</p>
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h3>HUMAN RABIES DATA TRACKING</h3>
+        <ul>
+          <li>Pre-exposure</li>
+          <li>Post Exposure</li>
+          <li>Diagnosis</li>
+          <li>Recording/Reporting</li>
+          <li>Capacity Building</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>HUMAN HEALTH SECTORS</h3>
+        <ul>
+          <li>Dog Mass Vaccination</li>
+          <li>Pet Vaccination</li>
+          <li>Euthanasia of Rabid Animals</li>
+          <li>Animal Birth Control</li>
+          <li>Recording/Reporting</li>
+          <li>Capacity Building</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>ANIMAL HEALTH SECTORS</h3>
+        <ul>
+          <li>Environmental and Epidemiological Modeling of Rabies Transmission</li>
+          <li>Reducing Wildlife-Domestic Animal Interaction</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>ENVIRONMENTAL HEALTH SECTORS</h3>
+        <ul>
+          <li>Epidemiological Investigation of Rabies</li>
+          <li>Reducing Spillover from Wildlife to Domestic Animals and Humans</li>
+          <li>Wildlife Population Management</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>WILDLIFE SECTORS</h3>
+        <ul>
+          <li>Increasing Literacy and Health Resources</li>
+          <li>Adequate Budget Allocation</li>
+          <li>Improving Accessibility</li>
+          <li>Public Awareness and Participation</li>
+          <li>Coordination Between Human and Animal Health Professionals</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 One Digital Platform for Rabies Prevention. All rights reserved.</p>
+  </footer>
+</body>
+</html>
