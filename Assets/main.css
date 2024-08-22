@@ -23,7 +23,7 @@ body {
 
   /* Header Styles */
   header {
-    background-color: var(--primary-color); 
+    background-color: #008370; 
     color: #fff;
   }
 
@@ -32,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--primary-color); 
+    background-color: #00796b; 
   }
 
   .contact-info {
@@ -72,7 +72,7 @@ body {
     justify-content: flex-end; 
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--primary-color);
+    background-color: #008370;
     position: sticky;
     top: 0;
     z-index: 1000; 
@@ -145,7 +145,7 @@ body {
 }
 
 .nav-links .dropdown-content a:hover {
-  color: var(--secondary-color);
+  color: #D18C8C;
 }
 
 .nav-links li a.active {
@@ -171,7 +171,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 40px 20px;
-    background-color: var(--secondary-color); 
+    background-color: #8C5C5C; 
     color: #fff;
     padding: 30px;
     border-radius: 20px;
@@ -200,7 +200,7 @@ body {
   }
 
   .cta-button {
-    background-color: var(--primary-color); 
+    background-color: #00796b; 
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -211,7 +211,7 @@ body {
   }
 
   .cta-button:hover {
-    background-color: var(--primary-color);
+    background-color: #008370;
     color: #fff;
   }
 
@@ -220,7 +220,7 @@ body {
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: var(--secondary-color); 
+    background-color: #8C5C5C; 
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
   }
@@ -253,7 +253,7 @@ body {
 
   .column h3 {
     font-size: 20px;
-    color: var(--secondary-color); 
+    color: #7A3D3D; 
     margin-bottom: 10px;
   }
 
@@ -270,7 +270,7 @@ body {
 
   /* Footer Styles */
   footer {
-    background-color: var(--primary-color);
+    background-color: #008370;
     color: #fff;
     text-align: center;
     padding: 20px;
