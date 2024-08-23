@@ -1,4 +1,7 @@
-
+//Menu togle button
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('active');
+});
 /* subtle fade-in effect for elements with the "fade-in" class */
 document.addEventListener('DOMContentLoaded', function() {
   const fadeElements = document.querySelectorAll('.fade-in');

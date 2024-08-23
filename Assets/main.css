@@ -1,20 +1,36 @@
 /* Colors */
 :root {
-  --primary-color: #008370;
-  --secondary-color: #8C5C5C;
+  --primary-color: #8C5C5C;
+  --secondary-color: #d4af37;
   --text-color: #333;
+}
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
 }
 
 p, li{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h2{
   font-size: 32px;
+  color: var(--text-color);
 }
 
 h3{
-  font-size: 22px;
+  font-size: 25px;
+  color: var(--text-color);
 }
 
 body {
@@ -108,14 +124,11 @@ body {
     transition: background-color 0.3s ease;
   }
 
-  .nav-links li a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
 
-  .nav-links li a i {
-    margin-right: 5px;
-  }
- 
+.nav-links li a i {
+  margin-right: 5px;
+}
+
 .nav-links .dropdown {
   position: relative;
 }
@@ -149,17 +162,17 @@ body {
 }
 
 .nav-links .dropdown-content a:hover {
-  color: #D18C8C;
+  color: var(--secondary-color);
 }
 
 .nav-links li a.active {
-  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
 .nav-links li a:hover,
 .nav-links .dropdown:hover > a {
-  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--secondary-color);
 }
 
 .nav-links .dropdown > a::after {
@@ -168,6 +181,82 @@ body {
   vertical-align: middle;
   margin-left: 5px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .contact-info, .social-links {
+    margin-bottom: 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+  }
+
+  .nav-menu {
+    display: none; /* Hide nav menu by default on small screens */
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    display: flex; /* Show nav menu when active */
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-links li a {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .nav-links .dropdown-content {
+    position: static;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .nav-links .dropdown > a::after {
+    display: none; /* Hide dropdown arrow on mobile */
+  }
+
+  .menu-toggle {
+    display: block; /* Show menu toggle button on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 5px;
+  }
+
+  .nav-container {
+    padding: 5px;
+  }
+
+  .nav-links li a {
+    padding: 8px;
+  }
+}
+
 
   /* Hero Section */
   .hero {
@@ -195,7 +284,7 @@ body {
   }
 
   .cta-button {
-    background-color: #00796b; 
+    background-color: var(--primary-color); 
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -206,15 +295,11 @@ body {
   }
 
   .cta-button:hover {
-    background-color: #008370;
+    background-color: var(--secondary-color);
     color: #fff;
   }
 
   /* Home page Styles */
-.sections {
-  padding: 60px 0;
-  margin-bottom: 30px;
-}
 .home h1{
   color:var(--text-color);
 }
@@ -248,12 +333,10 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 
 .rvms-image {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   height: auto;
   margin-bottom: 20px;
@@ -265,8 +348,6 @@ body {
 }
 
 .lead {
-  font-size: 1.2rem;
-  line-height: 1.6;
   color:var(--text-color);
 }
 
@@ -282,7 +363,6 @@ body {
 
 .sectors .card-title {
   color: var(--primary-color);
-  font-size: 1.25rem;
   margin-bottom: 15px;
 }
 .sectors .card-title i {
@@ -308,9 +388,6 @@ body {
 }
  
   /*Projects Style */
-.content {
-  padding: 60px;
-}
 
 .project-description {
   padding: 60px 0;
@@ -359,7 +436,7 @@ body {
 }
  /* Footer Styles */
  footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: #fff;
   text-align: center;
   padding: 20px;
