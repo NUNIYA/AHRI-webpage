@@ -5,8 +5,12 @@
   --text-color: #333;
 }
 
-p{
+p, li{
   font-size: 14px;
+}
+
+h2{
+  font-size: 32px;
 }
 
 h3{
@@ -207,30 +211,64 @@ body {
   }
 
   /* home page Styles */
-  .why {
+  .sections {
     align-items: center;
     margin: 30px;
-  }
-  .rabies{
-    align-items: center;
-  }
-  .rabies p{
-    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 5px;
+  }
+  .home h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 0.6rem;
+    padding-bottom: 20px;
+  }
+  .rabies {
+    align-items: center;
+    padding: 30px  ;
+  }
+  .rabies .txts {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
     flex: 1;
     max-width: 800px;
+    color: #fff;
   }
+  
   .rabies img{
     width: 300px;
     padding-left: 30px;
-    height: auto;
+    height: 250px;
     margin-right: 1rem;
+  }
+
+  .rabies ul {
+  list-style-type:circle;
+  }
+
+  .clip-boards {
+    padding: 20px;
+    margin: 0 auto;
+
+  }
+
+  .cb .txts{
+    max-width: 300px;
+  }
+
+  .cb h3 {
+    background-color: var(--secondary-color);
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
   }
 
   /* Footer Styles */
   footer {
-    background-color: #008370;
+    background-color: var(--primary-color);
     color: #fff;
     text-align: center;
     padding: 20px;
