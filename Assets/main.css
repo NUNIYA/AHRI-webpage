@@ -167,13 +167,8 @@ body {
 
   /* Hero Section */
   .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin: 40px 20px;
-    background-color: #8C5C5C; 
     color: #fff;
-    padding: 30px;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
@@ -183,15 +178,11 @@ body {
     max-width: 50%; 
   }
 
-  .hero-image {
+  .hero img {
     flex: 1;
     text-align: right;
-    padding-left: 20px;
-  }
-
-  .hero-image img {
-    max-width: 100%;
-    border-radius: 20px;
+    height: 500px;
+    width: 700px;
   }
 
   .read-more {
@@ -216,56 +207,25 @@ body {
   }
 
   /* home page Styles */
-  section.container {
-    max-width: 1200px;
-    margin: 40px auto;
+  .why {
+    align-items: center;
+    margin: 30px;
+  }
+  .rabies{
+    align-items: center;
+  }
+  .rabies p{
+    border: 2px solid black;
     padding: 20px;
-    background-color: #8C5C5C; 
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
-  }
-
-  .section-title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #fff; 
-  }
-
-  .section-content {
-    margin-bottom: 40px;
-    color: #fff;
-  }
-
-  .columns {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .column {
+    border-radius: 5px;
     flex: 1;
-    min-width: 280px;
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
   }
-
-  .column h3 {
-    font-size: 20px;
-    color: #7A3D3D; 
-    margin-bottom: 10px;
-  }
-
-  .column ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .column ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
+  .rabies img{
+    width: 300px;
+    padding-left: 30px;
+    height: auto;
+    margin-right: 1rem;
   }
 
   /* Footer Styles */
