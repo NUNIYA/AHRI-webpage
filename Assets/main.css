@@ -23,6 +23,9 @@ p{
 p, li{
   font-size: 16px;
 }
+p {
+  text-align: justify;
+}
 
 h2{
   font-size: 32px;
@@ -345,6 +348,7 @@ body {
   border: none;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   height: 100%;
+  border-radius: 20px;
 }
 
 .card:hover {
@@ -420,7 +424,7 @@ body {
   text-align: center;
 }
  
-  /*Projects Style */
+/*Projects Style */
 
 
 /*Partner style*/
@@ -559,7 +563,9 @@ body {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
+footer p{
+  text-align: center;
+}
 footer a {
   color: #fff;
   text-decoration: none;
