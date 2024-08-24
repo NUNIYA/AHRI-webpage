@@ -465,7 +465,25 @@ body {
   color: var(--text-color);
   border-radius: 20px;
 }
+#align-p .card-body {
+  height: 220px; /* Reduced from 250px */
+  display: flex;
+  flex-direction: column;
+}
 
+#align-p  .card-title {
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#align-p  .card-text {
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start; 
+  margin-bottom: 0; 
+}
 .card {
   border: none;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
