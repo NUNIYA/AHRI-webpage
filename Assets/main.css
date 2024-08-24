@@ -549,6 +549,12 @@ body {
   padding: 20px;
 }
 
+.partner-logos img{
+  max-width: 180px;
+  max-height: 30px;
+  transition: filter 0.3s ease;
+}
+
  /* Footer Styles */
  footer {
   background-color: var(--primary-color);
