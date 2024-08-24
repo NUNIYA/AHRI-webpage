@@ -15,7 +15,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p{
   font-family: var(--font-primary);
 }
 
@@ -277,7 +278,7 @@ body {
   .hero img {
     flex: 1;
     text-align: right;
-    height: 500px;
+    height: 400px;
     width: 700px;
   }
 
@@ -287,7 +288,7 @@ body {
   }
 
   .cta-button {
-    background-color: var(--primary-color); 
+    background-color: #008374; 
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -297,26 +298,25 @@ body {
     display: inline-block;
   }
 
-  .cta-button:hover {
-    background-color: var(--secondary-color);
-    color: #fff;
-  }
-
   /* Home page Styles */
+.sections {
+    align-items: center;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
 .home h1{
   color:var(--text-color);
 }
 .home h2 {
-  color: var(--primary-color);
+  color: var(--text-color);
   text-align: center;
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 30px;
 }
-.btn .btn-primary{
-  color:var(--secondary-color);
-}
-
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -347,17 +347,22 @@ body {
 
 .hero {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background-color: white;
 }
 
-.lead {
-  color:var(--text-color);
+.hero p{
+  color: var(--text-color);
 }
 
 .why .card-body {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
   border-radius: 10px;
+  padding: 30px;
+}
+
+.why h3 {
+  color: white;
 }
 
 .sectors .card-body {
@@ -365,7 +370,7 @@ body {
 }
 
 .sectors .card-title {
-  color: var(--primary-color);
+  color: #008374;
   margin-bottom: 15px;
 }
 .sectors .card-title i {
@@ -381,13 +386,25 @@ body {
   padding-left: 20px;
 }
 .data-tracking {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: white;
+  color: var(--text-color);
+  margin: 50px;
 }
 
 .data-tracking h2 {
-  color: #fff;
+  color: var(--text-color);
   border-bottom-color: #fff;
+}
+
+.ctrl-txt {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.ctrl-img {
+  text-align: center;
 }
  
   /*Projects Style */
@@ -439,7 +456,7 @@ body {
 }
  /* Footer Styles */
  footer {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   color: #fff;
   text-align: center;
   padding: 20px;
