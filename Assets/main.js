@@ -2,6 +2,28 @@
 document.querySelector('.menu-toggle').addEventListener('click', function() {
   document.querySelector('.nav-menu').classList.toggle('active');
 });
+
+  /**
+   * Sticky Header on Scroll
+   */
+  const selectHeader = document.querySelector('#header');
+  if (selectHeader) {
+    let headerOffset = selectHeader.offsetTop;
+    let nextElement = selectHeader.nextElementSibling;
+
+    const headerFixed = () => {
+      if ((headerOffset - window.scrollY) <= 0) {
+        selectHeader.classList.add('sticked');
+        if (nextElement) nextElement.classList.add('sticked-header-offset');
+      } else {
+        selectHeader.classList.remove('sticked');
+        if (nextElement) nextElement.classList.remove('sticked-header-offset');
+      }
+    }
+    window.addEventListener('load', headerFixed);
+    document.addEventListener('scroll', headerFixed);
+  }
+  
 /* subtle fade-in effect for elements with the "fade-in" class */
 document.addEventListener('DOMContentLoaded', function() {
   const fadeElements = document.querySelectorAll('.fade-in');

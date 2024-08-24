@@ -101,6 +101,19 @@ body {
     z-index: 1000; 
   }
 
+  .sticked-header-offset {
+    margin-top: 70px;
+  }
+
+  .sticked {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
   .nav-menu {
     flex: 1;
   }
@@ -409,41 +422,92 @@ body {
  
   /*Projects Style */
 
-.project-description {
-  padding: 60px 0;
+
+/*Partner style*/
+.partner-form {
+  background-color: var(--primary-color);
+  margin: 30px;
+  padding: 30px;
+}
+.submit-btn {
+  background-color: #008374;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-.components {
-  padding: 60px 0;
-}
-.component-list {
+.submit-btn:hover {
   background-color: var(--secondary-color);
-  color: #fff;
-  padding: 20px;
-  height: 100%;
+}
+/*RVMS style*/
+.bg-primary-custom {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: 20px;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.bg-primary-custom h2 {
+  color: white;
+  border-bottom: none; 
+  padding-bottom: 0;
+}
+.bg-primary-custom .card-title,
+.bg-primary-custom .card-text {
+  color:var(--text-color);
+}
+.rvms-image {
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  max-width: 100%; 
+  margin-bottom: 20px;
+  height: 50px;
 }
 
-.component-list h3 {
-  color: #fff;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  padding-bottom: 20px;
-  position: relative;
-  display: inline-block;
-  border-bottom: 2px solid #eeeeee;
-  transition: 0.3s;
-  background-color: var(--secondary-color);
+.container.mt-5.fade-in {
+  background-color: #ffffff; 
+  padding: 30px; 
+  border-radius: 15px; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
 }
 
-.component-list p {
-  line-height: 24px;
-  margin-bottom: 0;
-  text-align: justify;
+.text-justify {
+  text-align: justify; 
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-/* RVMS Scroll Animation Styles */
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.card-style .card {
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-style .card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Scroll Animation Styles */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
