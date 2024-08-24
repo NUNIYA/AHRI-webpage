@@ -454,6 +454,37 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* about page styles */
+.key-facts ul{
+  list-style-type: none;
+}
+
+.key-facts span{
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.team-members.sections{
+  background-color: var(--primary-color);
+}
+
+#about-nav .custom-nav-link{
+    color: var(--primary-color) !important;
+}
+
+#about-nav .custom-nav-link.custom-nav-link-active{
+  color: var(--secondary-color)!important;
+}
+
+.about .sections {
+  align-items: center;
+  margin: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
  /* Footer Styles */
  footer {
   background-color: var(--primary-color);
