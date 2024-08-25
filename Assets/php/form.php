@@ -29,9 +29,9 @@ try {
     $mail->addAddress('nuniyat.g@gmail.com', 'Tewo');     
 
     // Content
-    $mail->isHTML(false);                                 // Set email format to plain text
-    $mail->Subject = 'New Message from ' . $name;         // Set a subject
-    $mail->Body    = $message;                            // Set the body content
+    $mail->isHTML(false);                                 
+    $mail->Subject = 'New Message from ' . $name;         
+    $mail->Body    = $message;                           
 
     // Send email
     $mail->send();
