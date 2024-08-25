@@ -1,5 +1,5 @@
 # Ignore Composer dependencies
-/vendor/
+/Assets/php/vendor/
 
 # Ignore environment files
 .env
