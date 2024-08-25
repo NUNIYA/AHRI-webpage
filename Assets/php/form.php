@@ -16,17 +16,17 @@ $mail = new PHPMailer(true);
 
 try {
     // Server settings
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.gmail.com';                       // Specify SMTP server
-    $mail->SMTPAuth   = true;                             // Enable SMTP authentication
-    $mail->Username   = 'tewobstas@gmail.com';                // SMTP username
-    $mail->Password   = 'Mariam.21';                       // SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` for SMTPS
-    $mail->Port       = 587;                              // TCP port to connect to
+    $mail->isSMTP();                                     
+    $mail->Host = 'smtp.gmail.com';                       
+    $mail->SMTPAuth   = true;                             
+    $mail->Username   = 'nuniyat.g@gmail.com';                
+    $mail->Password   = 'f d m x j p g w z d k j j a l k';                       
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   
+    $mail->Port       = 587;                              
 
     // Recipients
-    $mail->setFrom($email, $name);                        // Set the sender's email and name
-    $mail->addAddress('tewobstas@gmail.com', 'Tewo');     // Send the email to your email address
+    $mail->setFrom($email, $name);                        
+    $mail->addAddress('nuniyat.g@gmail.com', 'Tewo');     
 
     // Content
     $mail->isHTML(false);                                 // Set email format to plain text
