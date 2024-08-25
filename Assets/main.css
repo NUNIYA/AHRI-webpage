@@ -201,6 +201,17 @@ body {
   margin-left: 5px;
 }
 
+.nav-links li a.active,
+.nav-links .dropdown.active > a {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.nav-links .dropdown-content a.active {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
 .menu-toggle {
   display: none;
   background: none;

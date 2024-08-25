@@ -23,6 +23,21 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
     window.addEventListener('load', headerFixed);
     document.addEventListener('scroll', headerFixed);
   }
+
+  /* Active Navigation" */
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentPage = window.location.pathname.split("/").pop();
+    var navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(function(link) {
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+        var dropdown = link.closest('.dropdown');
+        if (dropdown) {
+          dropdown.classList.add('active');
+        }
+      }
+    });
+  });
   
 /* subtle fade-in effect for elements with the "fade-in" class */
 document.addEventListener('DOMContentLoaded', function() {
@@ -57,3 +72,4 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(element);
   });
 });
+
