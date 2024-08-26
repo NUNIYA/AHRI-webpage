@@ -1,61 +1,53 @@
-(function () {
-  "use strict";
+const form = document.getElementById('form');
+const msg = document.getElementById('error-msg');
+const err = document.getElementsByClassName('main-error')[0];
+const sent = document.getElementsByClassName('sent-message')[0];
 
-  let forms = document.querySelectorAll('.php-email-form');
+function validateName() {
+  const Name = document.getElementById('name').value;
+  const regex = /^[a-zA-Z\s]+$/;
+  if (!regex.test(Name)) {
+    msg.innerText = "Name can only contain letters and spaces";
+    msg.classList.remove('d-none');
+    return false;
+  }
+  return true;
+}
 
-  forms.forEach(function(e) {
-    e.addEventListener('submit', function(event) {
-      event.preventDefault();
+function validateDescription() {
+  const description = document.getElementById('message').value;
+  if (description.length < 10) {
+    msg.innerText = "Description must be at least 10 characters long";
+    msg.classList.remove('d-none');
+    return false;
+  }
+  return true;
+}
 
-      let thisForm = this;
+form.addEventListener('submit', (e) => {
+  e.preventDefault();  
+  
+  msg.classList.add('d-none');
+  err.classList.add('d-none');
+  sent.classList.add('d-none');
 
-      let action = thisForm.getAttribute('action');
-      
-      if (!action) {
-        displayError(thisForm, 'The form action property is not set!');
-        return;
-      }
+  if (!validateName() || !validateDescription()) {
+    err.classList.remove('d-none');
+  } else {
+    sent.classList.remove('d-none');
 
-      thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
-
-      let formData = new FormData(thisForm);
-
-      php_email_form_submit(thisForm, action, formData);
-    });
-  });
-
-  function php_email_form_submit(thisForm, action, formData) {
-    fetch(action, {
+    const formData = new FormData(form);
+    fetch(form.action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
-    .then(response => {
-      thisForm.querySelector('.loading').classList.remove('d-block');
-      if (response.ok) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`);
-      }
-    })
+    .then(response => response.text())
     .then(data => {
-      if (data.trim() === 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset();
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action);
-      }
+      sent.classList.remove('d-none');
+      form.reset();
     })
-    .catch((error) => {
-      displayError(thisForm, error);
+    .catch(error => {
+      err.classList.remove('d-none');
     });
   }
-
-  function displayError(thisForm, error) {
-    thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
-  }
-})();
+});

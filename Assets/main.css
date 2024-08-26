@@ -471,6 +471,19 @@ body {
 .submit-btn:hover {
   background-color: var(--secondary-color);
 }
+
+.error {
+  color: red;
+}
+
+.main-error {
+  font-weight: bold;
+}
+
+.sent-message {
+  color: green;
+}
+
 /*RVMS style*/
 .bg-primary-custom {
   background-color: var(--primary-color);
