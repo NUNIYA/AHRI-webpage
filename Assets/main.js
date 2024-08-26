@@ -26,18 +26,31 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
 
   /* Active Navigation" */
   document.addEventListener('DOMContentLoaded', function() {
-    var currentPage = window.location.pathname.split("/").pop();
+    var currentPage = window.location.pathname.split("/").pop().toLowerCase();
     var navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(function(link) {
-      if (link.getAttribute('href') === currentPage) {
-        link.classList.add('active');
-        var dropdown = link.closest('.dropdown');
-        if (dropdown) {
-          dropdown.classList.add('active');
-        }
+      link.classList.remove('active');
+    });
+    var homeLink = document.querySelector('.nav-links a[href="index.html"]');
+    var activeLink = null;
+    navLinks.forEach(function(link) {
+      var linkHref = link.getAttribute('href').toLowerCase();
+      if (linkHref === currentPage) {
+        activeLink = link;
       }
     });
+    if (!activeLink || currentPage === "" || currentPage === "index.html") {
+      activeLink = homeLink;
+    }
+    if (activeLink) {
+      activeLink.classList.add('active');
+      var dropdown = activeLink.closest('.dropdown');
+      if (dropdown) {
+        dropdown.classList.add('active');
+      }
+    }
   });
+
   
 /* subtle fade-in effect for elements with the "fade-in" class */
 document.addEventListener('DOMContentLoaded', function() {
