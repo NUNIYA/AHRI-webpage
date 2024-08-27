@@ -232,6 +232,12 @@ body {
     padding: 10px;
   }
 
+  .clas1 {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .nav-menu {
     display: none; /* Hide nav menu by default on small screens */
     width: 100%;
@@ -269,7 +275,8 @@ body {
   }
 
   .menu-toggle {
-    display: block; /* Show menu toggle button on small screens */
+    display: block;
+    align-items: self-end; /* Show menu toggle button on small screens */
   }
 }
 
