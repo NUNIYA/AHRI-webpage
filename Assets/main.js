@@ -1,6 +1,18 @@
 //Menu togle button
 document.querySelector('.menu-toggle').addEventListener('click', function() {
-  document.querySelector('.nav-menu').classList.toggle('active');
+  // Toggle the 'active' class on the menu
+  const navMenu = document.querySelector('.nav-menu');
+  const overlay = document.querySelector('.overlay');
+  navMenu.classList.toggle('active');
+  overlay.classList.toggle('active');
+  
+  // If the menu is active, disable scrolling
+  if (navMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+  } else {
+      // If the menu is not active, re-enable scrolling
+      document.body.style.overflow = '';
+  }
 });
 
   /**
