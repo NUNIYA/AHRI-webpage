@@ -113,7 +113,6 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    height: 70px;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
   }
 
@@ -346,8 +345,7 @@ body {
   .hero img {
     flex: 1;
     text-align: right;
-    height: 400px;
-    width: 700px;
+    
   }
 
   .read-more {
@@ -702,16 +700,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
-  position: fixed; 
+  height: 10vh;
+  text-align: center; 
   width: 100%;
   top: 0;
   left: 0;
 }
 
 .coming-soon h1 {
-  font-size: 58px; 
+  font-size: 48px; 
   color: var(--text-color); 
   font-weight: bold;
 }
@@ -724,9 +721,7 @@ footer {
   font-size: 14px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  position: relative;
 }
-
 .footer {
   background-color: var(--primary-color);
   color: #fff;
