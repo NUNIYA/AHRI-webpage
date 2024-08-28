@@ -615,6 +615,20 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
+.bg-primary-custom .btn-primary {
+  background-color: #008374;
+  border-color: #008374;
+  color: #fff;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  align-self: flex-start;
+}
+
+.bg-primary-custom .btn-primary:hover {
+  background-color: #d4af37;
+  border-color: #d4af37;
+}
 
 /* Scroll Animation Styles */
 .fade-in {
@@ -799,6 +813,7 @@ footer a {
       margin-left: 0;
       margin-top: 10px;
   }
+}
 /* coming soon */
 .coming-soon {
   display: flex;
