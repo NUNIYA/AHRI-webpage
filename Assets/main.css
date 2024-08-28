@@ -694,7 +694,7 @@ body {
   background-color: var(--primary-color);
 }
 
-.green-line {
+.horizontal-line {
   border: none;
   height: 5px; 
   background-color: var(--primary-color);
@@ -706,6 +706,11 @@ body {
 #about-nav .custom-nav-link{
     color: var(--primary-color) !important;
 }
+
+#about-nav .custom-nav-link:hover{
+  color: var(--secondary-color) !important;
+}
+
 
 #about-nav .custom-nav-link.custom-nav-link-active{
   color: var(--secondary-color)!important;
@@ -749,7 +754,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  height: 100vh;
   text-align: center; 
   width: 100%;
   top: 0;
