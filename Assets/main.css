@@ -439,6 +439,15 @@ body {
   color: var(--text-color);
 }
 
+.key-facts ul{
+  list-style-type: none;
+}
+
+.key-facts span{
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
 .why .card-body {
   background-color: var(--primary-color);
   color: #fff;
@@ -641,18 +650,58 @@ body {
 }
 
 /* about page styles */
-.key-facts ul{
-  list-style-type: none;
-}
 
-.key-facts span{
+.mini-title{
   font-weight: 700;
   color: var(--primary-color);
 }
 
-.team-members.sections{
+.researchers {
   background-color: var(--primary-color);
 }
+
+.operational {
+  background-color: var(--primary-color);
+}
+
+.program{
+  background-color: var(--primary-color);
+}
+
+.digitalization-member .card{
+  background-color: whitesmoke;
+}
+
+.custom-vertical-line {
+  position: relative;
+  padding-left: 20px; 
+}
+
+.custom-vertical-line::before {
+  content: "";
+  position: absolute;
+  top: 50%; 
+  left: 20px;
+  width: 5px; 
+  height: 70%; 
+  background-color: var(--primary-color); 
+  transform: translateY(-50%); 
+}
+
+
+
+.primary-section{
+  background-color: var(--primary-color);
+}
+
+.green-line {
+  border: none;
+  height: 5px; 
+  background-color: var(--primary-color);
+  margin: 30px 0; 
+}
+
+
 
 #about-nav .custom-nav-link{
     color: var(--primary-color) !important;
