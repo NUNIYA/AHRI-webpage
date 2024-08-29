@@ -47,7 +47,15 @@ body {
     padding: 0;
     background-color: #F3F3F3; 
     color: #333;
-  }
+}
+
+.section1 {
+  background-color: #F3F3F3;
+}
+
+.section2 {
+  background-color: #f1ece4;
+}
 
   /* Header Styles */
   header {
