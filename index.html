@@ -11,186 +11,360 @@
 
 </head>
 <body>
-  <header>
-    <div class="topbar">
-      <div class="contact-info">
-        <a href="mailto:xxx@rabie.org"><i class="fas fa-envelope"></i> xxx@rabie.org</a>
-        <a href="tel:+251-9000000"><i class="fas fa-phone"></i> +251-9000000</a>
-      </div>
-      <div class="social-links">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
-    </div>
-    <div class="nav-container" id="header">
-      <div class="clas1" style="display: flex; justify-content: space-between;">
-        <div>
-          <a href="index.html">
-            <div id="logo-anim" class="img-fluid"></div>
-          </a>
+  <div class="same-bg">
+    <header>
+      <div class="nav-container" id="header">
+        <div class="clas1" style="display: flex; justify-content: space-between;">
+          <div>
+            <a href="index.html">
+              <div id="logo-anim" class="img-fluid">logo here</div>
+            </a>
+          </div>
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="overlay"></div>
         </div>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="overlay"></div>
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li class="dropdown">
+              <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
+              <ul class="dropdown-content">
+                <li><a href="RVMS.html">RVMS</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#"><i class="fas fa-project-diagram"></i> Projects</a>
+              <ul class="dropdown-content">
+                <li><a href="INRVMS.html">INRVMS</a></li>
+                <li><a href="NRSP.html">NRSP</a></li>
+                <li><a href="SCP.html">SCP</a></li>
+              </ul>
+            </li>
+            <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
+            <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="nav-menu">
-        <ul class="nav-links">
-          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-          <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-          <li class="dropdown">
-            <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
-            <ul class="dropdown-content">
-              <li><a href="RVMS.html">RVMS</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#"><i class="fas fa-project-diagram"></i> Projects</a>
-            <ul class="dropdown-content">
-              <li><a href="INRVMS.html">INRVMS</a></li>
-              <li><a href="NRSP.html">NRSP</a></li>
-              <li><a href="SCP.html">SCP</a></li>
-            </ul>
-          </li>
-          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
-          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-
-  <section id="hero">
+    </header>
+  
+  
+    <section id="hero">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="hero-text col-md-6 order-md-1 order-2">
+            <p>A One Health approach to rabies prevention and control recognizes the interconnectedness of human, animal, and environmental health. It emphasizes collaboration and coordination among various sectors to address rabies as a shared health threat.</p>
+            <a href="about.html" class="cta-button">Learn More</a>
+          </div>
+          <div class="col-md-6 order-md-2 order-1">
+            <img src="images/hero.png" alt="" class="img-fluid"> 
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+  
+  <section class="section1 approach">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-md-7 order-md-1 order-2">
-          <h1>One Digital Platform for Rabies Prevention</h1>
-          <p>
-            Welcome to our comprehensive digital solution for rabies prevention. Our platform integrates various tools and resources to combat rabies effectively, ensuring better coordination among stakeholders and improved public health outcomes.
-          </p>
-          <a href="about.html" class="cta-button">Learn More</a>
+      <h2>Approach</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="box">
+            <div class="box-header">
+              <h5><img src="images/approachs-icons/statistics.png" class="img-fluid icns" alt=""> Surveillance and Data Sharing</h5>
+            </div>
+            <div class="box-body">
+              <ul>
+                <li>
+                  <span>Integrated surveillance:</span> 
+                  Conduct comprehensive surveillance of rabies cases in humans, domestic animals, and wildlife.
+                </li>
+                <li>
+                  <span>Data sharing:</span> 
+                  Establish mechanisms for sharing data across sectors to identify trends, risk factors, and areas of concern.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="col-md-5 order-md-2 order-1">
-          <img src="images/hero.png" class="img-fluid " alt="Hero image">
+        
+        <div class="col-md-4 mb-4">
+          <div class="box">
+            <div class="box-header">
+              <h5><img src="images/approachs-icons/syringe.png" class="img-fluid icns" alt=""> Vaccination Programs</h5>
+            </div>
+            <div class="box-body">
+              <ul>
+                <li>
+                  <span>Mass vaccination:</span> 
+                  Implement mass vaccination programs for domestic animals, especially dogs, which are the primary reservoir of rabies in many regions.
+                </li>
+                <li>
+                  <span>Human vaccination:</span> 
+                  Provide pre-exposure prophylaxis (PEP) for individuals at high risk of exposure, such as veterinarians, wildlife workers, and travelers to rabies-endemic areas.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="box">
+            <div class="box-header">
+              <h5><img src="images/approachs-icons/wildlife.png" class="img-fluid icns" alt=""> Vector Control</h5>
+            </div>
+            <div class="box-body">
+              <ul>
+                <li>
+                  <span>Wildlife management:</span> 
+                  Implement measures to control wildlife populations that can transmit rabies, such as bats and raccoons.
+                </li>
+                <li>
+                  <span>Habitat modification:</span> 
+                  Modify habitats to reduce contact between humans and wildlife.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="box">
+            <div class="box-header">
+              <h5><img src="images/approachs-icons/public-relations.png" class="img-fluid icns" alt=""> Community Engagement</h5>
+            </div>
+            <div class="box-body">
+              <ul>
+                <li>
+                  <span>Public education:</span> 
+                  Raise awareness about rabies prevention and control among the public, emphasizing the importance of vaccination, responsible pet ownership, and avoiding contact with wild animals.
+                </li>
+                <li>
+                  <span>Community participation:</span> 
+                  Involve communities in rabies prevention and control activities, such as animal vaccination campaigns and surveillance programs.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="box">
+            <div class="box-header">
+              <h5><img src="images/approachs-icons/agreement.png" class="img-fluid icns" alt=""> Intersectoral Collaboration</h5>
+            </div>
+            <div class="box-body">
+              <ul>
+                <li>
+                  <span>Partnerships:</span> 
+                  Foster partnerships between human and animal health sectors, wildlife conservation organizations, and local governments.
+                </li>
+                <li>
+                  <span>Joint planning:</span> 
+                  Develop and implement joint rabies prevention and control strategies.
+                </li>
+                <li>
+                  <span>Shared resources:</span> 
+                  Pool resources and expertise to enhance the effectiveness of rabies control efforts.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-      
 
-    <section class="section1">
-      <div class="noContainer">
-        
-              <h2>MHRP: A Collaborative Effort for a Rabies-Free Ethiopia</h2>
-              <p >The "Mobile Health (mHealth) for Rabies Prevention" (MHRP) project is a groundbreaking initiative tackling the critical public health issue of rabies in Ethiopia. Supported by the VDMdRDD projects initiative, MHRP aims to significantly reduce the threat of dog-mediated rabies, a persistent challenge exacerbated by difficulties in vaccine management and limited public awareness.</p>
-              <p >At the heart of MHRP lies the innovative Web-based Rabies Vaccine Management System (RVMS), launched in September 2024.</p>
-              <p >The MHRP project is a collaborative effort involving government agencies, healthcare professionals, and community stakeholders. By leveraging technology and fostering partnerships, MHRP strives to create a healthier and safer Ethiopia, free from the threat of rabies.</p>
-            
-      </div>
-    </section>
-      
+  <section class="section2 theory">
+    <div class="container">
+      <h2>Theory of Change</h2>
+      <p>The theory of change outlines the steps necessary to achieve a rabies-free Ethiopia through a One Health approach, incorporating digital transformation for enhanced vaccination, surveillance, and capacity-building.</p>
 
-    <section class="section2">
-      <div class="container">
-        <h2>Key Facts</h2>
-        <div>
-          <h3 class="text-center">Rabies in Ethiopia</h3>
-          <ul class="sections" style="">
-            <li><i class="bi bi-check2"></i><span> High Mortality Rate:</span> Ethiopia records approximately 2,700 human rabies deaths annually, 
-              making it one of the highest in Africa. This high mortality rate positions Ethiopia as the second highest in rabies mortality across the continent, primarily due to the high incidence of dog mediated rabies infections (World Health Organization, 2022; Global Alliance for Rabies Control, 
-              2023).</li><br>
-            <li><i class="bi bi-check2"></i><span> Widespread Risk: </span> Over 10,000 rabies exposure
-              cases are reported each year in Ethiopia, 
-              affecting both urban and rural populations. Rabies is a significant public health issue across all 
-              regions of the country, with both urban centers and rural areas reporting high exposure rates 
-              (Ethiopian Ministry of Health, 2023; Africa CDC, 2022). </li><br>
-            <li><i class="bi bi-check2"></i><span> Underserved Populations:</span> Less than 50% of rabies
-              exposure victims in rural areas receive timely 
-              post-exposure prophylaxis (PEP). The delay in receiving PEP, combined with limited access to 
-              healthcare facilities, increases the fatality risk, particularly in remote and underserved 
-              communities (Journal of Infectious Diseases, 2023; Ethiopian Public Health Institute, 2023).</li><br>
+      <div class="row justify-content-between align-items-center">
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/list.png" class="img-fluid image" alt="">
+        </div>
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Inputs</h3>
+          <ul class="sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Digital infrastructure: </span>
+              Development and deployment of digital tools and platforms for vaccination, surveillance, and capacity-building.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Financial resources: </span>
+              Investment in rabies prevention and control programs, including digital infrastructure development.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Human resources: </span>
+              Skilled professionals in public health, veterinary medicine, wildlife conservation, and information technology.
+            </li>
           </ul>
         </div>
       </div>
-    </section>
 
-    <section class="section1">
-      <div class="container">
-        <h2>Challenges</h2>
-
-        <ul>
-          <div class="row">
-            <div class="col-lg-6 col-12 d-flex flex-column align-items-center text-center mb-4">
-                <div class="box">
-                    <img src="images/vaccines.png" class="img-fluid pic-bag">
-                    <li>
-                        <span class="box-header">Vaccine Access Issues</span><br>
-                        There are frequent vaccine stockouts at health facilities, leading to delays in administering life-saving treatment.
-                    </li>
-                </div>
-            </div>
-        
-            <div class="col-lg-6 col-12 d-flex flex-column align-items-center text-center mb-4">
-                <div class="box">
-                    <img src="images/real-time.png" class="img-fluid pic-bag">
-                    <li>
-                        <span class="box-header">Lack of Real-Time Data</span><br>
-                        The absence of a robust system to track vaccine inventory and demand hinders efficient management and timely resupply.
-                    </li>
-                </div>
-            </div>
-        
-            <div class="col-lg-6 col-12 d-flex flex-column align-items-center text-center mb-4">
-                <div class="box">
-                    <img src="images/brand-awareness.png" class="img-fluid pic-bag">
-                    <li>
-                        <span class="box-header">Public Awareness Deficit</span><br>
-                        Limited knowledge about rabies prevention and the importance of seeking immediate treatment following exposure contributes to delayed treatment and increased mortality.
-                    </li>
-                </div>
-            </div>
-        
-            <div class="col-lg-6 col-12 d-flex flex-column align-items-center text-center mb-4">
-                <div class="box">
-                    <img src="images/earth-globe.png" class="img-fluid pic-bag">
-                    <li>
-                        <span class="box-header">Geographical Barriers</span><br>
-                        The vast and diverse landscape of Ethiopia makes it difficult to distribute vaccines effectively and reach all at-risk populations.
-                    </li>
-                </div>
-            </div>
+      <div class="row justify-content-between align-items-center">
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Activities</h3>
+          <ul class="sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Digital vaccination systems: </span>
+              Development and implementation of digital platforms for managing vaccination programs, including patient registration, appointment scheduling, and inventory management.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Integrated surveillance systems: </span>
+              Establishment of digital surveillance systems to collect, analyze, and share data on rabies cases in humans, animals, and wildlife.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>E-learning platforms: </span>
+              Creation of online learning modules and courses to enhance the capacity of healthcare professionals, veterinarians, and community members in rabies prevention and control.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Mobile health applications: </span>
+              Development of mobile apps for reporting animal bites, accessing vaccination information, and receiving disease alerts.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Data analytics and visualization: </span>
+              Use of data analytics tools to identify trends, risk factors, and areas of concern related to rabies.
+            </li>
+          </ul>
         </div>
-        </ul>
-
-      </div>
-    </section>
-
-    <section class="section2">
-      <div class="container">
-        <h2>Why One Digital Platform?</h2>
-        <div class="row">
-          <div class="col-md-4">
-            <img src="images/why.jpg" alt="Why One Digital Platform" class="img-fluid rvms-image">
-          </div>
-          <div class="col-md-8">
-            <div class="card">
-              <div class="card-body">
-                <p>Rabies is a serious and often fatal viral disease that affects both animals and humans. It is primarily transmitted through the bite or scratch of an infected animal, typically a dog or wild carnivore. Effectively controlling and preventing the spread of rabies requires a coordinated and comprehensive approach across multiple stakeholders, including public health authorities, veterinarians, animal control agencies, and the general public.</p>
-                <h3 style="color: white;">It provides:</h3>
-                <ul>
-                  <li>Centralized data and information management</li>
-                  <li>Coordinated response and intervention</li>
-                  <li>Public awareness and education</li>
-                  <li>Streamlined vaccination and treatment access</li>
-                  <li>Improved surveillance and early detection</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/working.png" class="img-fluid image" alt="">
         </div>
       </div>
-    </section>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/efficiency.png" class="img-fluid image" alt="">
+        </div>
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Outputs</h3>
+          <ul class="sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Improved vaccination coverage: </span>
+              Increased access to rabies vaccination for both humans and animals.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Enhanced surveillance: </span>
+              More comprehensive and timely surveillance of rabies cases.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Increased capacity-building: </span>
+              Improved knowledge and skills of healthcare professionals, veterinarians, and community members in rabies prevention and control.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Data-driven decision-making: </span>
+              Informed decision-making based on evidence from surveillance and data analysis.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Outcomes</h3>
+          <ul class=" sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Reduced rabies incidence: </span>
+              Decreased number of human and animal rabies cases.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Improved public health: </span>
+              Protection of human health and well-being.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Strengthened One Health collaboration: </span>
+              Enhanced collaboration among human and animal health sectors, wildlife conservation organizations, and communities.
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/outcome.png" class="img-fluid image" alt="">
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/impact.png" class="img-fluid image" alt="">
+        </div>
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Impact</h3>
+          <ul class=" sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              <span>Rabies-free Ethiopia: </span>
+              A world where rabies is no longer a threat to Ethiopian human and animal health systems.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="row justify-content-between align-items-center">
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Risks </h3>
+          <ul class=" sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              Technical challenges in implementing digital systems
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              Resistance to digital transformation from stakeholders.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              Limited access to digital infrastructure in some areas.
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/taking-risk.png" class="img-fluid image" alt="">
+        </div>
+      </div>
+
+      <div class="row justify-content-between align-items-center">
+        <div class="col-sm-2 order-md-1 order-2">
+          <img src="images/theory/evaluation.png" class="img-fluid image" alt="">
+        </div>
+        <div class="txt col-sm-10 order-md-1 order-2">
+          <h3>Monitoring and Evaluation</h3>
+          <ul class=" sections">
+            <li>
+              <i class="bi bi-check-lg"></i>
+              Establish key performance indicators (KPIs) to measure progress towards achieving the desired outcomes.
+            </li>
+            <li>
+              <i class="bi bi-check-lg"></i>
+              Implement a robust monitoring and evaluation framework to track progress, identify challenges, and make necessary adjustments.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  
+      
 
     <section class="section1">
       <div class="container">
@@ -268,23 +442,7 @@
       </div>
     </section>
 
-    <section class="section2">
-      <div class="container">
-        <h2>Human Rabies Data Tracking</h2>
-        <div class="row">
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <img src="images/rabies.png" class="img-fluid" alt="" style="transform: scale(0.7);" >
-          </div>
-          <div class="col-md-8 ctrl-txt">
-            <p>A rabies control platform would track and analyze comprehensive human rabies data, including cases, exposures, treatments, and related factors like demographics and transmission sources. Real-time monitoring and trend analysis help authorities identify high-risk areas, allocate resources, and make data-driven decisions. The platform also integrates community-level data on vaccination, animal populations, and public awareness, supporting targeted interventions to reduce human rabies.</p>
-          </div>
-        </div>
-        <div class="ctrl-img sections ">
-          <h2>One Health Approach</h2>
-          <img src="images/ctrl.jpg" alt="" class="img-fluid" style="transform: scale(1.04);">
-        </div>
-      </div>
-    </section>
+    
 
     <section class="section1">
       <div class="container">
