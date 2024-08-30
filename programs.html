@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Digital Platform for Rabies Prevention</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Assets/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  <style>
+    .nav-menu {
+  position: relative;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+  position: relative; /* Needed for nested dropdown positioning */
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Nested dropdown positioning to the right */
+.dropdown-content .dropdown-content {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Only show nested dropdown on hover of Teams */
+.dropdown-content .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Prevent the nested dropdown from being visible when hovering over About */
+.dropdown-content .dropdown-content {
+  display: none;
+}
+
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="contact-info">
+        <a href="mailto:xxx@rabie.org"><i class="fas fa-envelope"></i> xxx@rabie.org</a>
+        <a href="tel:+251-9000000"><i class="fas fa-phone"></i> +251-9000000</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="nav-container" id="header">
+      <div class="clas1" style="display: flex; justify-content: space-between;">
+        <a href="index.html">
+          <img src="images/mhrplogo.png"  alt="" class="logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="overlay"></div>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            <ul class="dropdown-content">
+              <li><a href="programs.html">Programs</a></li>
+              <li class="dropdown">
+                <a href="#">Teams</a>
+                <ul class="dropdown-content">
+                  <li><a href="researchers.html">Researchers</a></li>
+                  <li><a href="digitalization.html">Digitalization</a></li>
+                  <li><a href="operational.html">Operational</a></li>
+                </ul>
+              </li>
+              <li><a href="partnership.html">Partnership</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
+            <ul class="dropdown-content">
+              <li><a href="RVMS.html">RVMS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-project-diagram"></i> Projects</a>
+            <ul class="dropdown-content">
+              <li><a href="INRVMS.html">INRVMS</a></li>
+              <li><a href="NRSP.html">NRSP</a></li>
+              <li><a href="SCP.html">SCP</a></li>
+            </ul>
+          </li>
+          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        </ul>
+      </nav>
+      
+      
+    </div>
+  </header>
+
+  <main>
+    <section id="overview" class="section2">
+      <h2 class="text-center p-2">About the Program</h2>
+      <h3>Overview</h3>
+      <p>This program aims to eliminate human rabies in Ethiopia by 2030 through a comprehensive approach that addresses both human and animal health aspects. The program recognizes the critical role of dogs in transmitting rabies and focuses on mass dog vaccination as a key strategy.</p>
+    </section>
+
+    <section id="goals">
+      <h3 class="text-center pb-3">GOALS</h3>
+      <ul>
+        <li>Reduce human rabies deaths to zero by 2030.</li>
+        <li>Improve public awareness and understanding of rabies prevention.</li>
+        <li>Strengthen surveillance and diagnostic capacity for rabies.</li>
+        <li>Enhance collaboration between human and animal health sectors.</li>
+        <li>Promote responsible dog ownership and management.</li>
+      </ul>
+    </section>
+
+    <section id="strategies">
+      <h3 class="text-center pb-3">STRATEGIES</h3>
+      <ul style="list-style-type: none;">
+        <li> 
+          <span class="mini-title">1. Mass Dog Vaccination</span>
+          <ul>
+            <li>Conduct regular mass vaccination campaigns to achieve high coverage rates among dog populations.</li>
+            <li>Utilize effective rabies vaccines and vaccination techniques.</li>
+            <li>Implement strategies to reach remote and underserved areas.</li>
+          </ul>
+        </li>
+  
+        <li>
+          <span class="mini-title">2. Dog Population Management</span>
+          <ul>
+            <li>Promote responsible dog ownership through education and awareness programs.</li>
+            <li>Implement sterilization and neutering programs to control dog populations.</li>
+            <li>Encourage responsible pet care practices.</li>
+          </ul>
+        </li>
+  
+        <li>
+          <span class="mini-title">3. Post-Exposure Prophylaxis (PEP) </span>
+          <ul>
+            <li>Ensure timely access to PEP for individuals exposed to potentially rabid animals.</li>
+            <li>Establish efficient referral systems for PEP services.</li>
+            <li>Promote awareness of PEP among healthcare providers and the general public.</li>
+          </ul>
+        </li>
+  
+        <li>
+          <span class="mini-title">4. Surveillance and Diagnostics </span>
+          <ul>
+            <li>Strengthen surveillance systems to detect and report rabies cases in both humans and animals.</li>
+            <li>Improve diagnostic capabilities for rabies in laboratory settings.</li>
+            <li>Enhance reporting and data management systems.</li>
+          </ul>
+        </li>
+  
+        <li>
+          <span class="mini-title">5. Public Health Education</span>
+          <ul>
+            <li>Conduct public health campaigns to raise awareness about rabies prevention.</li>
+            <li>Target specific populations, such as children, healthcare workers, and rural communities.</li>
+            <li>Disseminate information through various channels, including print media, radio, television, and social media.</li>
+          </ul>
+        </li>
+  
+        <li>
+          <span class="mini-title">6. Intersectional Collaboration</span>
+          <ul>
+            <li>Foster collaboration between human and animal health sectors to ensure coordinated efforts.</li>
+            <li>Establish joint working groups and committees to address rabies prevention and control</li>
+            <li>Share information, resources, and expertise across sectors.</li>
+          </ul>
+        </li>
+  
+      </ul>
+    </section>
+
+    <section id="expected-outcomes">
+      <h3 class="text-center pb-3">EXPECTED OUTCOMES</h3>
+      <ul>
+        <li>Significant reduction in human rabies cases and deaths.</li>
+        <li>Increased awareness and adoption of rabies prevention practices.</li>
+        <li>Improved surveillance and diagnostic capabilities.</li>
+        <li>Strengthened collaboration between human and animal health sectors.</li>
+        <li>Controlled dog populations and responsible pet ownership practices.</li>
+      </ul>
+    </section>
+
+    <section id="partnership-and-funding">
+      <h3 class="text-center pb-3">PARTNERSHIPS AND FUNDING</h3>
+      <ul>
+        <li>Collaborate with government agencies, NGOs, international organizations, and local communities.</li>
+        <li>Secure funding from various sources, including government budgets, international donors, and private sector partners.</li>
+        <li>Ensure sustainable funding to support long-term implementation of the program.</li>
+      </ul>
+    </section>
+    
+  </main>
+
+ <!-- footer -->
+<footer id="footer" class="footer" style=" width: 100%; bottom: 0; left: 0;">
+  <div class="container">
+      <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+              <div class="logo-container">
+                  <a href="index.html" class="logo">
+                      <img src="images/mhrplogo.png" alt="Company Logo" class="img-fluid">
+                  </a>
+              </div>
+              <div class="social-text">
+                  <p>Connect with us on social media</p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="RVMS.html">RVMS</a></li>
+                  <li><a href="INRVMS.html">INRVMS</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Services</h4>
+              <ul>
+                  <li><a href="NRSP.html">NRSP</a></li>
+                  <li><a href="SCP.html">SCP</a></li>
+                  <li><a href="Resources.html">Resources</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-4">
+    <div class="copyright">
+        <p>&copy; 2024 One Digital Platform for Rabies Prevention. All rights reserved.</p>
+    </div>
+      <div class="credits">
+          Designed by <a href="https://dartdigitaltech.com/">Dart Digital Technologies PLC</a>
+      </div>
+  </div>
+</footer>
+<!-- end of footer-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="Assets/main.js"></script>
+</body>
+</html>
