@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Digital Platform for Rabies Prevention</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Assets/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  <style>
+    .nav-menu {
+  position: relative;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+  position: relative; /* Needed for nested dropdown positioning */
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Nested dropdown positioning to the right */
+.dropdown-content .dropdown-content {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Only show nested dropdown on hover of Teams */
+.dropdown-content .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Prevent the nested dropdown from being visible when hovering over About */
+.dropdown-content .dropdown-content {
+  display: none;
+}
+
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="contact-info">
+        <a href="mailto:xxx@rabie.org"><i class="fas fa-envelope"></i> xxx@rabie.org</a>
+        <a href="tel:+251-9000000"><i class="fas fa-phone"></i> +251-9000000</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="nav-container" id="header">
+      <div class="clas1" style="display: flex; justify-content: space-between;">
+        <a href="index.html">
+          <img src="images/mhrplogo.png"  alt="" class="logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="overlay"></div>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            <ul class="dropdown-content">
+              <li><a href="programs.html">Programs</a></li>
+              <li class="dropdown">
+                <a href="#">Teams</a>
+                <ul class="dropdown-content">
+                  <li><a href="researchers.html">Researchers</a></li>
+                  <li><a href="digitalization.html">Digitalization</a></li>
+                  <li><a href="operational.html">Operational</a></li>
+                </ul>
+              </li>
+              <li><a href="partnership.html">Partnership</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
+            <ul class="dropdown-content">
+              <li><a href="RVMS.html">RVMS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-project-diagram"></i> Projects</a>
+            <ul class="dropdown-content">
+              <li><a href="INRVMS.html">INRVMS</a></li>
+              <li><a href="NRSP.html">NRSP</a></li>
+              <li><a href="SCP.html">SCP</a></li>
+            </ul>
+          </li>
+          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        </ul>
+      </nav>
+      
+      
+    </div>
+  </header>
+  
+  <div id="digitalization" class="digitalization">
+    <h3 class="text-center p-3">Digitalization</h3>
+
+      <div class="digitalization-member sections">
+          <img src="images/profile.jpg" alt="" class="digitalization-img">
+          <div class="researcher-description">
+            <p>Mr. Luleseged leads Digital Tool Development Research and Architecture Design, his critical role within the program, responsible for researching, designing and overseeing the development of digital tools to support rabies prevention and control efforts. This role requires a deep understanding of both software architecture and the specific needs of the program.</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul class="">
+                    <h3>Technical Architecture Design</h3>
+                    <li>System Analysis: Conduct a thorough analysis of the program's requirements, workflows, and data needs to identify the optimal digital architecture.</li>
+                    <li>Technology Selection: Evaluate and select appropriate technologies (e.g., programming languages, databases, cloud platforms) based on scalability, performance, and security considerations.</li>
+                    <li>Data Architecture: Design the data architecture, including data models, data flow, and data storage strategies to ensure data integrity and accessibility.</li>
+                    <li>Integration Planning: Develop plans for integrating digital tools with existing systems (e.g., health information systems, surveillance systems) to enable data sharing and interoperability.</li>
+                </ul>
+                </div>
+               
+              </div>
+            <div class=" col-lg-6 col-md-12 mb-4">
+              <div class="card p-4 custom-vertical-line">
+                <ul class="">
+                  <h3>Development Oversight</h3>
+                <li>Team Leadership: Lead a team of software developers, ensuring they adhere to established standards and best practices.</li>
+                <li>Development Process: Oversee the development process, including requirements gathering, design, coding, testing, and deployment.</li>
+                <li>Quality Assurance: Implement quality assurance measures to ensure the reliability, performance, and security of the digital tools.</li>
+            </ul>
+          </div>
+              
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card p-4 custom-vertical-line">
+                <ul class="">
+                  <h3>Digital Tool Development</h3>
+                  <li>Mobile App Development: Design and develop mobile applications for data collection, reporting, and tracking of rabies cases.</li>
+                  <li>Web Portal Development: Create online platforms for public awareness, information dissemination, and data visualization.</li>
+                  <li>Data Analytics Tools: Develop tools for analyzing and interpreting large datasets on rabies cases, vaccination coverage, and other relevant factors.</li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4">
+              <div class="card p-4 custom-vertical-line">
+                <ul class="">
+                  <h3>Collaboration</h3>
+                  <li>Stakeholder Engagement: Collaborate with program stakeholders (e.g., epidemiologists, veterinarians, public health officials) to understand their needs and incorporate them into digital tool design.</li>
+                  <li>Intersectoral Collaboration: Work with other teams within the program to ensure seamless integration of digital tools with other program activities.</li>
+                  <li>External Partnerships: Collaborate with external organizations (e.g., technology providers, research institutions) to leverage their expertise and resources.</li>
+                </ul>
+              </div>
+              
+            </div>
+            </div>
+            
+        </div>
+      </div>
+
+      <div class="digitalization-member sections">
+          <img src="images/profile.jpg" alt="" class="digitalization-img">
+          <div class="researcher-description">
+            <p>The Digital Tool Developer Software Engineer will play a crucial role in developing and maintaining the digital tools that support the program's objectives. This role will involve:</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul class="" >
+                    <h3>Software Development</h3>
+                    <li>Coding: Write high-quality, efficient, and maintainable code using appropriate programming languages (e.g., Python, Java, JavaScript).</li>
+                    <li>Development Frameworks: Utilize development frameworks (e.g., React Native, Larval, Flutter) to accelerate mobile app development.</li>
+                    <li>Database Management: Design and implement database structures to store and manage program data effectively</li>
+                    <li>API Integration: Develop APIs to enable integration with other systems and data sources.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul class="">
+                    <h3>Technical Implementation</h3>
+                    <li>Feature Development: Implement new features and functionalities based on program requirements and user feedback.</li>
+                    <li>Bug Fixing: Identify and resolve software bugs and errors to ensure the reliability and stability of digital tools.</li>
+                    <li>Performance Optimization: Optimize code and database queries to improve the performance and responsiveness of digital tools.</li>
+                    <li>Security Implementation: Implement security measures to protect sensitive data and prevent unauthorized access.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul class="">
+                    <h3>Collaboration</h3>
+                    <li>Teamwork: Work closely with other team members, including the architecture lead, data scientists, and UX designers, to ensure the successful development and deployment of digital tools.</li>
+                    <li>Stakeholder Feedback: Gather feedback from program stakeholders to understand their needs and incorporate them into software development.</li>
+                    <li>External Partnerships: Collaborate with external technology providers and experts to leverage their knowledge and resources.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul class="">
+                    <h3>Technical Support</h3>
+                    <li>Troubleshooting: Provide technical support and troubleshooting for digital tools to address user issues and ensure smooth operation.</li>
+                    <li>Maintenance: Implement ongoing maintenance and updates to keep digital tools current and secure.</li>
+                    <li>Scalability: Ensure that digital tools can scale to accommodate increasing data volumes and user numbers.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            
+        </div>
+      </div>
+
+      <div class="digitalization-member sections">
+          <img src="images/profile.jpg" alt="" class="digitalization-img">
+          <div class="researcher-description">
+            <p>The Data Scientist will play a crucial role in analyzing and interpreting data to inform program decision-making and improve outcomes. This role will involve:</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Data Analysis and Visualization</h3>
+                    <li>Data Cleaning and Preparation: Clean and prepare data for analysis, including handling missing values, outliers, and inconsistencies.</li>
+                    <li>Exploratory Data Analysis: Conduct exploratory data analysis to identify patterns, trends, and relationships within the data.</li>
+                    <li>Statistical Analysis: Apply statistical methods (e.g., descriptive statistics, hypothesis testing, regression analysis) to analyze data and draw meaningful conclusions.</li>
+                    <li>Data Visualization: Create visualizations (e.g., charts, graphs) to effectively communicate data findings to stakeholders.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Predictive Modeling</h3>
+                    <li>Model Development: Develop predictive models (e.g., machine learning algorithms) to forecast future trends, identify high-risk areas, or predict the likelihood of rabies outbreaks.</li>
+                    <li>Model Evaluation: Evaluate the performance of predictive models using appropriate metrics and techniques.</li>
+                    <li>Model Deployment: Deploy validated models into operational systems to support decision-making.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Insights and Recommendations</h3>
+                    <li>Data-Driven Insights: Provide data-driven insights and recommendations to inform program planning, implementation, and evaluation.</li>
+                    <li>Risk Assessment: Identify high-risk areas or populations for rabies transmission based on data analysis.</li>
+                    <li>Intervention Evaluation: Evaluate the effectiveness of program interventions using data-driven methods.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Data Management</h3>
+                    <li>Data Governance: Develop and implement data governance policies and procedures to ensure data quality, security, and privacy.</li>
+                    <li>Data Infrastructure: Collaborate with technical teams to design and implement data infrastructure, including data warehouses and data lakes.</li>
+                    <li>Data Integration: Integrate data from various sources (e.g., surveillance systems, health information systems, geographic information systems) to create a comprehensive dataset.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Collaboration</h3>
+                    <li>Teamwork: Work closely with other team members, including researchers, epidemiologists, and public health officials, to address data-related needs and challenges.</li>
+                    <li>Stakeholder Engagement: Communicate data findings and insights to stakeholders in a clear and understandable manner.</li>
+                    <li>External Partnerships: Collaborate with external data scientists and researchers to leverage their expertise and resource</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+
+      <div class="digitalization-member sections">
+          <img src="images/profile.jpg" alt="" class="digitalization-img">
+          <div class="researcher-description">
+            <p>The Digital Tool Web Developer will be responsible for designing, developing, and maintaining web-based applications and platforms to support the program's objectives. This role will involve:</p>
+            <div class="row">
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Web Development</h3>
+                    <li>Frontend Development: Create visually appealing and user-friendly web interfaces using HTML, CSS, and JavaScript frameworks (e.g., React, Angular).</li>
+                    <li>Backend Development: Develop the server-side logic and database interactions for web applications using programming languages like Python (with frameworks like Django or Flask).</li>
+                    <li>Responsive Design: Ensure that web applications are accessible and functional across different devices and screen sizes.</li>
+                    <li>Web Standards: Adhere to web standards and best practices to create maintainable and accessible websites.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Digital Platform Development</h3>
+                    <li>Web Portal Development: Design and develop web portals for public awareness, information dissemination, and data visualization.</li>
+                    <li>Dashboard Development: Create interactive dashboards to display key metrics, trends, and insights related to rabies prevention and control.</li>
+                    <li>Data Visualization: Develop visualizations (e.g., charts, graphs) to effectively communicate data and information to users.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Integration</h3>
+                    <li>API Integration: Integrate web applications with other systems and data sources using APIs.</li>
+                    <li>Third-Party Integrations: Integrate with third-party services (e.g., mapping services, payment gateways) as needed.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Technical Support</h3>
+                    <li>Troubleshooting: Provide technical support and troubleshooting for web applications to address user issues and ensure smooth operation.</li>
+                    <li>Maintenance: Implement ongoing maintenance and updates to keep web applications current and secure.</li>
+                    <li>Scalability: Ensure that web applications can scale to accommodate increasing user traffic and data volumes.</li>
+                </ul>
+                </div>
+              </div>
+              <div class="col-lg-12 col-md-12 mb-4">
+                <div class="card p-4 custom-vertical-line">
+                  <ul>
+                    <h3>Collaboration</h3>
+                    <li>Teamwork: Work closely with other team members, including the architecture lead, software engineers, and UX designers, to ensure the successful development and deployment of web applications.</li>
+                    <li>Stakeholder Feedback: Gather feedback from program stakeholders to understand their needs and incorporate them into web development.</li>
+                    <li>External Partnerships: Collaborate with external technology providers and experts to leverage their knowledge and resources.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      
+  </div>
+  
+ <!-- footer -->
+<footer id="footer" class="footer" style=" width: 100%; bottom: 0; left: 0;">
+  <div class="container">
+      <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+              <div class="logo-container">
+                  <a href="index.html" class="logo">
+                      <img src="images/mhrplogo.png" alt="Company Logo" class="img-fluid">
+                  </a>
+              </div>
+              <div class="social-text">
+                  <p>Connect with us on social media</p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="RVMS.html">RVMS</a></li>
+                  <li><a href="INRVMS.html">INRVMS</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Services</h4>
+              <ul>
+                  <li><a href="NRSP.html">NRSP</a></li>
+                  <li><a href="SCP.html">SCP</a></li>
+                  <li><a href="Resources.html">Resources</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-4">
+    <div class="copyright">
+        <p>&copy; 2024 One Digital Platform for Rabies Prevention. All rights reserved.</p>
+    </div>
+      <div class="credits">
+          Designed by <a href="https://dartdigitaltech.com/">Dart Digital Technologies PLC</a>
+      </div>
+  </div>
+</footer>
+<!-- end of footer-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="Assets/main.js"></script>
+</body>
+</html>

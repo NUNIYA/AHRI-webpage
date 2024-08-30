@@ -713,6 +713,7 @@ li {
 }
 
 /* about page styles */
+/* programs page styles */
 
 .mini-title{
   font-weight: 700;
@@ -750,8 +751,6 @@ li {
   background-color: var(--primary-color); 
   transform: translateY(-50%); 
 }
-
-
 
 .primary-section{
   background-color: var(--primary-color);
