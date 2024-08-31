@@ -38,24 +38,12 @@ if (selectHeader) {
 
 
 document.addEventListener('scroll', function() {
-  var header = document.getElementById('header');
+  var header = document.getElementById('header-diff');
   if (window.scrollY > 50) { // Adjust this value as needed
     header.classList.add('sticked');
   } else {
     header.classList.remove('sticked');
   }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const headers = document.querySelectorAll('.box-header');
-
-  headers.forEach(header => {
-    header.addEventListener('click', () => {
-      const boxBody = header.nextElementSibling;
-      header.classList.toggle('show');
-      boxBody.classList.toggle('show');
-    });
-  });
 });
 
 
