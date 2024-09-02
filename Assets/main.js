@@ -15,26 +15,37 @@ document.querySelector('.menu-toggle').addEventListener('click', function() {
   }
 });
 
-  /**
+/**
    * Sticky Header on Scroll
    */
-  const selectHeader = document.querySelector('#header');
-  if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop;
-    let nextElement = selectHeader.nextElementSibling;
+const selectHeader = document.querySelector('#header');
+if (selectHeader) {
+  let headerOffset = selectHeader.offsetTop;
+  let nextElement = selectHeader.nextElementSibling;
 
-    const headerFixed = () => {
-      if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('sticked');
-        if (nextElement) nextElement.classList.add('sticked-header-offset');
-      } else {
-        selectHeader.classList.remove('sticked');
-        if (nextElement) nextElement.classList.remove('sticked-header-offset');
-      }
+  const headerFixed = () => {
+    if ((headerOffset - window.scrollY) <= 0) {
+      selectHeader.classList.add('sticked');
+      if (nextElement) nextElement.classList.add('sticked-header-offset');
+    } else {
+      selectHeader.classList.remove('sticked');
+      if (nextElement) nextElement.classList.remove('sticked-header-offset');
     }
-    window.addEventListener('load', headerFixed);
-    document.addEventListener('scroll', headerFixed);
   }
+  window.addEventListener('load', headerFixed);
+  document.addEventListener('scroll', headerFixed);
+}
+
+
+document.addEventListener('scroll', function() {
+  var header = document.getElementById('header-diff');
+  if (window.scrollY > 50) { // Adjust this value as needed
+    header.classList.add('sticked');
+  } else {
+    header.classList.remove('sticked');
+  }
+});
+
 
   /* Active Navigation" */
   document.addEventListener('DOMContentLoaded', function() {
