@@ -37,14 +37,16 @@ if (selectHeader) {
 }
 
 
-document.addEventListener('scroll', function() {
-  var header = document.getElementById('header-diff');
-  if (window.scrollY > 50) { // Adjust this value as needed
-    header.classList.add('sticked');
+// JavaScript to change header background on scroll
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.custom-header');
+  if (window.scrollY > 50) { // Adjust scroll distance to trigger the effect
+    header.classList.add('scrolled');
   } else {
-    header.classList.remove('sticked');
+    header.classList.remove('scrolled');
   }
 });
+
 
 $(document).ready(function() {
   $('.icon-container').on('click', function() {
@@ -62,7 +64,7 @@ $(document).ready(function() {
 
 document.querySelectorAll('.icon-container').forEach(function(element) {
   element.addEventListener('click', function(event) {
-    
+
       const title = this.getAttribute('data-title');
       const description = this.getAttribute('data-description');
 
