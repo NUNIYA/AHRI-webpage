@@ -51,16 +51,20 @@
               <li><a href="SCP.html">SCP</a></li>
             </ul>
           </li>
-          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
-          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="Resources.php"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.php"><i class="fas fa-blog"></i> Blog</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
   <div class="coming-soon">
-    <h1 class="section">Coming Soon</h1>
-  </div>
+    <?php
+        include 'coming_soon.php';
+        $contentAvailable = false; 
+        displayContent($contentAvailable);
+    ?>
+</div>
 <!-- footer -->
 <footer id="footer" class="footer" style="width: 100%; bottom: 0; left: 0;">
   <div class="container">

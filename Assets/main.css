@@ -45,6 +45,59 @@ body {
     background-color: #F3F3F3; 
     color: #333;
 }
+/*home page header style*/
+.custom-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-top: 30px;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.custom-header.scrolled {
+  background-color: var(--primary-color); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  margin-top: 0;
+}
+
+.custom-header .nav-container {
+  padding: 10px 20px;
+}
+
+.custom-header .logo {
+  max-height: 40px;
+  transition: max-height 0.3s ease;
+  padding-left: 20px;
+}
+
+.custom-header.scrolled .logo {
+  max-height: 40px;
+}
+
+
+.hero-section {
+  margin-top: 80px; /
+}
+
+
+.same-bg {
+  background: url('../images/hero-bg.png') no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.same-bg .nav-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ddd; 
+    z-index: 1000; 
+    transition: background 0.3s ease;
+  }
 
 /* Header Styles */
   header {
@@ -95,21 +148,7 @@ body {
   }
 /* Naviagtion bar */
 
-.same-bg {
-  background: url('../images/hero-bg.png') no-repeat center center;
-  height: 100vh;
-  background-size: cover;
-}
 
-.same-bg .nav-container {
-    position: fixed; /* Fixes the header to the top of the viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid #ddd; 
-    z-index: 1000; 
-    transition: background 0.3s ease;
-  }
   .nav-container {
     display: flex;
     justify-content: flex-end; 
@@ -120,7 +159,7 @@ body {
     z-index: 1000; 
   }
 
-  #header-diff {
+  .header-diff {
     background: transparent;
   }
 
@@ -394,12 +433,12 @@ span {
   #hero {
     color: #F3F3F3;
     height: 100vh;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 40vh;
   }
 
   #hero p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .read-more {
@@ -523,8 +562,8 @@ h2 {
 }
 
 .pic-bag {
-  position: absolute; /* Allows the image to be positioned relative to the .box container */
-  top: -35px; /* Adjust this value to control how much the image overlaps the border */
+  position: absolute; 
+  top: -35px; 
   left: 50%;
   transform: translateX(-50%);
   width: 70px;
@@ -534,9 +573,9 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Optional: background color to make it stand out */
-  border-radius: 50%; /* Makes the image container circular */
-  border: solid var(--secondary-color) 1px; /* Match the border of the box */
+  background-color: white; 
+  border-radius: 50%; 
+  border: solid var(--secondary-color) 1px; 
   line-height: 0;
 }
 
@@ -789,14 +828,14 @@ li {
   font-size: 1.5em;
   color: #fff;
   text-decoration: none;
-  background-color: var(--secondary-color); /* A bold, complementary button color */
+  background-color: #008374; 
   padding: 10px 20px;
   border-radius: 25px;
   transition: background-color 0.3s ease;
 }
 
 .contact-link:hover {
-  color: var(--primary-color) /* Darken on hover */
+  color: var(--secondary-color) /* Darken on hover */
 }
 
 
