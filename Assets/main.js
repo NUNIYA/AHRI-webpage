@@ -47,6 +47,46 @@ window.addEventListener('scroll', function() {
   }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const infoBoxes = document.querySelectorAll('.info-box');
+  const modals = document.querySelectorAll('.modal');
+  const closeButtons = document.querySelectorAll('.close');
+
+  infoBoxes.forEach(infoBox => {
+      infoBox.addEventListener('click', () => {
+          const target = document.querySelector(infoBox.getAttribute('data-target'));
+          target.style.display = 'block';
+      });
+  });
+
+  closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          button.closest('.modal').style.display = 'none';
+      });
+  });
+
+  window.addEventListener('click', (event) => {
+      if (event.target.classList.contains('modal')) {
+          event.target.style.display = 'none';
+      }
+  });
+
+  // Puzzle assembly effect on scroll
+  const handleScroll = () => {
+      const windowHeight = window.innerHeight;
+      infoBoxes.forEach(box => {
+          const boxTop = box.getBoundingClientRect().top;
+          if (boxTop < windowHeight - 100) { // Trigger animation when in view
+              box.classList.add('animate');
+          }
+      });
+  };
+
+  handleScroll();
+
+  window.addEventListener('scroll', handleScroll);
+});
+
 
 $(document).ready(function() {
   $('.icon-container').on('click', function() {

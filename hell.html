@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            max-width: 800px;
+            height: 80vh;
+        }
+
+        .circle-container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-item {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            color: #fff;
+        }
+
+        .circle-item:hover {
+            transform: scale(1.2);
+            background-color: #333;
+        }
+
+        .circle-item:nth-child(1) { transform: rotate(0deg) translateX(150px); }
+        .circle-item:nth-child(2) { transform: rotate(72deg) translateX(150px); }
+        .circle-item:nth-child(3) { transform: rotate(144deg) translateX(150px); }
+        .circle-item:nth-child(4) { transform: rotate(216deg) translateX(150px); }
+        .circle-item:nth-child(5) { transform: rotate(288deg) translateX(150px); }
+
+        .circle-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .circle-item:hover .circle-content {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle-item">
+                <div class="circle-content">
+                    <h5>Surveillance and Data Sharing</h5>
+                    <p>Conduct comprehensive surveillance and establish data-sharing mechanisms across sectors.</p>
+                </div>
+                <span>1</span>
+            </div>
+            <div class="circle-item">
+                <div class="circle-content">
+                    <h5>Vaccination Programs</h5>
+                    <p>Implement mass vaccination programs and provide pre-exposure prophylaxis for high-risk individuals.</p>
+                </div>
+                <span>2</span>
+            </div>
+            <div class="circle-item">
+                <div class="circle-content">
+                    <h5>Vector Control</h5>
+                    <p>Control wildlife populations and modify habitats to reduce rabies transmission.</p>
+                </div>
+                <span>3</span>
+            </div>
+            <div class="circle-item">
+                <div class="circle-content">
+                    <h5>Community Engagement</h5>
+                    <p>Raise public awareness and involve communities in rabies prevention and control activities.</p>
+                </div>
+                <span>4</span>
+            </div>
+            <div class="circle-item">
+                <div class="circle-content">
+                    <h5>Intersectoral Collaboration</h5>
+                    <p>Foster partnerships and share resources to enhance rabies control efforts.</p>
+                </div>
+                <span>5</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
