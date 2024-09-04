@@ -523,8 +523,8 @@ h2 {
 }
 
 .pic-bag {
-  position: absolute; /* Allows the image to be positioned relative to the .box container */
-  top: -35px; /* Adjust this value to control how much the image overlaps the border */
+  position: absolute; 
+  top: -35px; 
   left: 50%;
   transform: translateX(-50%);
   width: 70px;
@@ -534,9 +534,9 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Optional: background color to make it stand out */
-  border-radius: 50%; /* Makes the image container circular */
-  border: solid var(--secondary-color) 1px; /* Match the border of the box */
+  background-color: white; 
+  border-radius: 50%; 
+  border: solid var(--secondary-color) 1px; 
   line-height: 0;
 }
 
