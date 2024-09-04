@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="Assets/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
 </head>
 <body>
   <header>
@@ -39,140 +44,210 @@
             <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
             <ul class="dropdown-content">
               <li><a href="RVMS.html">RVMS</a></li>
+              <li><a href="plan.html">Plan</a></li>
+              <li><a href="activity.html">Activity</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#"><i class="fas fa-project-diagram"></i> Projects</a>
             <ul class="dropdown-content">
-              <li><a href="INRVMS.html">INRVMS</a></li>
+              <li><a href="INRVMS.html">INHRVMS</a></li>
               <li><a href="NRSP.html">NRSP</a></li>
-              <li><a href="SCP.html">SCP</a></li>
+              <li><a href="SCP.html">CE</a></li>
             </ul>
           </li>
-          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
-          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="Resources.php"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.php"><i class="fas fa-blog"></i> Blog</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
-  <section class="section1">
-    <div class="proj-hero">
+  <section class="section1" style="background-color: var(--primary-color);">
+    <div class="proj-hero container">
+      <h1>INHARVMS</h1>
       <p>An Integrated National Human and Animal Rabies Vaccination Management System (INHARVMS) is a digital tool designed to enhance decision-making for rabies prevention and control efforts by 2030. By combining data from both human and animal vaccination programs, this system can provide a comprehensive overview of rabies epidemiology, identify gaps in coverage, and optimize resource allocation.</p>
     </div>
   </section>
 
-  <section class="section2">
+  <section class="section2" id="inr-key">
+    <div class="noContainer">
+    
     <h2>Key Components of the INHARVMS for 2030</h2>
 
-    <div>
-      <h5>Human and Animal Health Data Integration</h5>
-      <ul>
-        <li>
-          <span>Centralized database: </span>
-          Store data on human and animal rabies cases, vaccination records, and epidemiological information.
-        </li>
-        <li>
-          <span>Interoperability: </span>
-          Ensure seamless data exchange between human and animal health systems.
-        </li>
-        <li>
-          <span>Data standardization: </span>
-          Use standardized data formats and terminologies to facilitate data analysis and comparison.
-        </li>
-      </ul>
+    <div class="component-section">
+        <h5>Human and Animal Health Data Integration</h5>
+        <ul class="icon-list container">
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Centralized database" data-description="Store data on human and animal rabies cases, vaccination records, and epidemiological information.">
+                    <img src="images/inhrvms/database-storage.png" alt="Centralized database">
+                    <span class="icon-title">Centralized database</span>
+                </div>
+            </li>
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Interoperability" data-description="Ensure seamless data exchange between human and animal health systems.">
+                    <img src="images/inhrvms/interoperability.png" alt="Interoperability">
+                    <span class="icon-title">Interoperability</span>
+                </div>
+            </li>
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Data standardization" data-description="Use standardized data formats and terminologies to facilitate data analysis and comparison.">
+                    <img src="images/inhrvms/data-quality.png" alt="Data standardization">
+                    <span class="icon-title">Data standardization</span>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <div>
-      <h5>Risk Assessment and Surveillance</h5>
-      <ul>
-        <li>
-          <span>Spatiotemporal analysis: </span>
-          Use geographic information systems (GIS) to map rabies cases, identify hotspots, and assess risk factors.
-        </li>
-        <li>
-          <span>Predictive modeling: </span>
-          Employ mathematical models to forecast rabies outbreaks and evaluate the effectiveness of control measures.
-        </li>
-        <li>
-          <span>Early warning systems: </span>
-          Implement real-time surveillance mechanisms to detect and respond to emerging outbreaks.
-        </li>
-        
-      </ul>
+    <div class="component-section">
+        <h5>Risk Assessment and Surveillance</h5>
+        <ul class="icon-list container">
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Spatiotemporal analysis" data-description="Use geographic information systems (GIS) to map rabies cases, identify hotspots, and assess risk factors.">
+                    <img src="images/inhrvms/placeholder.png" alt="Spatiotemporal analysis">
+                    <span class="icon-title">Spatiotemporal analysis</span>
+                </div>
+            </li>
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Predictive modeling" data-description="Employ mathematical models to forecast rabies outbreaks and evaluate the effectiveness of control measures.">
+                    <img src="images/inhrvms/predictive.png" alt="Predictive modeling">
+                    <span class="icon-title">Predictive modeling</span>
+                </div>
+            </li>
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Early warning systems" data-description="Implement real-time surveillance mechanisms to detect and respond to emerging outbreaks.">
+                    <img src="images/inhrvms/danger.png" alt="Early warning systems">
+                    <span class="icon-title">Early warning systems</span>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <div>
-      <h5>Vaccination Program Management</h5>
-      <ul>
-        <li>
-          <span>Vaccine inventory and tracking: </span>
-          Monitor vaccine stock levels, expiration dates, and distribution.
-        </li>
-        <li>
-          <span>Target population identification: </span>
-          Identify high-risk populations for vaccination, such as children, veterinarians, and individuals living in areas with high rabies prevalence.
-        </li>
-        <li>
-          <span>Vaccination scheduling and reminders: </span>
-          Automate vaccination scheduling and send reminders to individuals and communities.
-        </li>
-      </ul>
+    <div class="component-section">
+        <h5>Vaccination Program Management</h5>
+        <ul class="icon-list container">
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Vaccine inventory and tracking" data-description="Monitor vaccine stock levels, expiration dates, and distribution.">
+                    <img src="images/inhrvms/syringe (1).png" alt="Vaccine inventory and tracking">
+                    <span class="icon-title">Vaccine inventory and tracking</span>
+                </div>
+            </li>
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Target population identification" data-description="Identify high-risk populations for vaccination, such as children, veterinarians, and individuals living in areas with high rabies prevalence.">
+                    <img src="images/inhrvms/target.png" alt="Target population identification">
+                    <span class="icon-title">Target population identification</span>
+                </div>
+            </li>
+            <li>
+                <div class="icon-container" data-aos="fade-up" data-title="Vaccination scheduling and reminders" data-description="Automate vaccination scheduling and send reminders to individuals and communities.">
+                    <img src="images/inhrvms/calendar.png" alt="Vaccination scheduling and reminders">
+                    <span class="icon-title">Vaccination scheduling and reminders</span>
+                </div>
+            </li>
+        </ul>
     </div>
 
-    <div>
-      <h5>Decision Support Tools</h5>
-      <ul>
-        <li>
-          <span>Cost-benefit analysis: </span>
-          Evaluate the economic impact of different rabies prevention strategies.
-        </li>
-        <li>
-          <span>Optimization algorithms: </span>
-          Identify the most efficient allocation of resources for vaccination campaigns.
-        </li>
-        <li>
-          <span>Scenario planning: </span>
-          Explore potential future scenarios to assess the effectiveness of different interventions.
-        </li>
-        
-      </ul>
+      <div class="component-section">
+          <h5>Decision Support Tools</h5>
+          <ul class="icon-list container">
+              <li>
+                  <div class="icon-container" data-aos="fade-up" data-title="Cost-benefit analysis" data-description="Evaluate the economic impact of different rabies prevention strategies.">
+                      <img src="images/inhrvms/market-analysis.png" alt="Cost-benefit analysis">
+                      <span class="icon-title">Cost-benefit analysis</span>
+                  </div>
+              </li>
+              <li>
+                  <div class="icon-container" data-aos="fade-up" data-title="Optimization algorithms" data-description="Identify the most efficient allocation of resources for vaccination campaigns.">
+                      <img src="images/inhrvms/algorithm.png" alt="Optimization algorithms">
+                      <span class="icon-title">Optimization algorithms</span>
+                  </div>
+              </li>
+              <li>
+                  <div class="icon-container" data-aos="fade-up" data-title="Scenario planning" data-description="Explore potential future scenarios to assess the effectiveness of different interventions.">
+                      <img src="images/inhrvms/scenario.png" alt="Scenario planning">
+                      <span class="icon-title">Scenario planning</span>
+                  </div>
+              </li>
+          </ul>
+      </div>  
     </div>
+  </section>
+
     
-  </section>
-
-  <section class="section1">
-    <h2>Benefits of the INHARVMS for 2030</h2>
-    <ul>
-      <li>
-        <span>Improved decision-making: </span>
-        Provide data-driven insights to support evidence-based decision-making.
-      </li>
-      <li>
-        <span>Enhanced rabies prevention and control: </span>
-        Improve vaccination coverage, detect outbreaks early, and implement effective control measures.
-      </li>
-      <li>
-        <span>Strengthened One Health collaboration: </span>
-        Foster collaboration between human and animal health sectors to address rabies as a shared health threat.
-      </li>
-      <li>
-        <span>Increased efficiency and cost-effectiveness: </span>
-        Streamline administrative tasks, optimize resource allocation, and reduce the overall cost of rabies prevention.
-      </li>
-      <li>
-        <span>Improved public health outcomes: </span>
-        Reduce the burden of rabies on human and animal populations.
-      </li>
-    </ul>
-  </section>
+  <section class="section1 benefits-section">
+    <div class="container">
+      <h2 class="text-center" data-aos="fade-up">Benefits of the INHARVMS for 2030</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 d-flex justify-content-center">
+          <img src="images/benefits.png" alt="Benefits Image" class="img-fluid" data-aos="fade-right">
+        </div>
+        <div class="col-md-8">
+          <ul class="list-unstyled">
+            <li class="d-flex mb-4" data-aos="fade-left" data-aos-delay="100">
+              <div class="icon-wrapper">
+                <img src="images/inhrvms/efficacy (1).png" alt="">
+              </div>
+              <div class="ms-3">
+                <span class="fw-bold">Improved decision-making:</span>
+                <p class="mb-0">Provide data-driven insights to support evidence-based decision-making.</p>
+              </div>
+            </li>
+            <li class="d-flex mb-4" data-aos="fade-left" data-aos-delay="200">
+              <div class="icon-wrapper">
+                <img src="images/inhrvms/protection.png" alt="">
+              </div>
+              <div class="ms-3">
+                <span class="fw-bold">Enhanced rabies prevention and control:</span>
+                <p class="mb-0">Improve vaccination coverage, detect outbreaks early, and implement effective control measures.</p>
+              </div>
+            </li>
+            <li class="d-flex mb-4" data-aos="fade-left" data-aos-delay="300">
+              <div class="icon-wrapper">
+                <img src="images/inhrvms/support.png" alt="">
+              </div>
+              <div class="ms-3">
+                <span class="fw-bold">Strengthened One Health collaboration:</span>
+                <p class="mb-0">Foster collaboration between human and animal health sectors to address rabies as a shared health threat.</p>
+              </div>
+            </li>
+            <li class="d-flex mb-4" data-aos="fade-left" data-aos-delay="400">
+              <div class="icon-wrapper">
+                <img src="images/inhrvms/economic-growth.png" alt="">
+              </div>
+              <div class="ms-3">
+                <span class="fw-bold">Increased efficiency and cost-effectiveness:</span>
+                <p class="mb-0">Streamline administrative tasks, optimize resource allocation, and reduce the overall cost of rabies prevention.</p>
+              </div>
+            </li>
+            <li class="d-flex mb-4" data-aos="fade-left" data-aos-delay="500">
+              <div class="icon-wrapper">
+                <img src="images/inhrvms/red-cross.png" alt="">
+              </div>
+              <div class="ms-3">
+                <span class="fw-bold">Improved public health outcomes:</span>
+                <p class="mb-0">Reduce the burden of rabies on human and animal populations.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
 
   <section class="section2">
-    <p>
-      By implementing a INHARVMS for 2030, Ethiopia can significantly improve their ability to prevent and control rabies, protecting public health and reducing the suffering caused by this deadly disease.
-    </p>
-    <h6>If you are interested to join this project as a partnership, please contact us</h6>
+    <div class="container">
+      <p class="sections">
+        By implementing a INHARVMS for 2030, Ethiopia can significantly improve their ability to prevent and control rabies, protecting public health and reducing the suffering caused by this deadly disease.
+      </p>
+    </div>
   </section>
+  <section class="partnership-invitation">
+    <div class="container">
+        <h2>If you are interested in joining this project as a partnership,</h2>
+        <a href="index.html#partner" class="contact-link">Contact us</a>
+    </div>
+  </section>
+  
  <!-- footer -->
 <footer id="footer" class="footer">
   <div class="container">
@@ -192,23 +267,28 @@
                   <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
               </div>
           </div>
-          <div class="col-lg-2 col-md-6 footer-links">
+          <div class="col-lg-2 col-md-4 footer-links">
               <h4>Useful Links</h4>
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="RVMS.html">RVMS</a></li>
-                  <li><a href="INRVMS.html">INRVMS</a></li>
               </ul>
           </div>
-          <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Services</h4>
+          <div class="col-lg-2 col-md-4 footer-links">
+              <h4>Projects</h4>
               <ul>
+                  <li><a href="INRVMS.html">INHRVMS</a></li>
                   <li><a href="NRSP.html">NRSP</a></li>
-                  <li><a href="SCP.html">SCP</a></li>
-                  <li><a href="Resources.html">Resources</a></li>
-                  <li><a href="Blog.html">Blog</a></li>
+                  <li><a href="SCP.html">CE</a></li>
               </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 footer-links">
+            <h4>Knowledge Hub</h4>
+            <ul>
+              <li><a href="Resources.html">Resources</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+            </ul>
           </div>
       </div>
   </div>
@@ -226,5 +306,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
   <script src="Assets/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </body>
 </html>

@@ -45,6 +45,59 @@ body {
     background-color: #F3F3F3; 
     color: #333;
 }
+/*home page header style*/
+.custom-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-top: 30px;
+  background: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.custom-header.scrolled {
+  background-color: var(--primary-color); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  margin-top: 0;
+}
+
+.custom-header .nav-container {
+  padding: 10px 20px;
+}
+
+.custom-header .logo {
+  max-height: 40px;
+  transition: max-height 0.3s ease;
+  padding-left: 20px;
+}
+
+.custom-header.scrolled .logo {
+  max-height: 40px;
+}
+
+
+.hero-section {
+  margin-top: 80px; /
+}
+
+
+.same-bg {
+  background: url('../images/hero-bg.png') no-repeat center center;
+  height: 100vh;
+  background-size: cover;
+}
+
+.same-bg .nav-container {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ddd; 
+    z-index: 1000; 
+    transition: background 0.3s ease;
+  }
 
 /* Header Styles */
   header {
@@ -95,21 +148,7 @@ body {
   }
 /* Naviagtion bar */
 
-.same-bg {
-  background: url('../images/hero-bg.png') no-repeat center center;
-  height: 100vh;
-  background-size: cover;
-}
 
-.same-bg .nav-container {
-    position: fixed; /* Fixes the header to the top of the viewport */
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-bottom: 1px solid #ddd; 
-    z-index: 1000; 
-    transition: background 0.3s ease;
-  }
   .nav-container {
     display: flex;
     justify-content: flex-end; 
@@ -120,7 +159,7 @@ body {
     z-index: 1000; 
   }
 
-  #header-diff {
+  .header-diff {
     background: transparent;
   }
 
@@ -394,12 +433,12 @@ span {
   #hero {
     color: #F3F3F3;
     height: 100vh;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 40vh;
   }
 
   #hero p {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .read-more {
@@ -513,16 +552,18 @@ h2 {
 }
 
 .txt .sections{
-  height: 300px;
   overflow: auto;
   justify-content: center;
   text-align: center;
 }
-
+.image {
+  height: 100px;
+  width: 100px;
+}
 
 .pic-bag {
-  position: absolute; /* Allows the image to be positioned relative to the .box container */
-  top: -35px; /* Adjust this value to control how much the image overlaps the border */
+  position: absolute; 
+  top: -35px; 
   left: 50%;
   transform: translateX(-50%);
   width: 70px;
@@ -532,9 +573,9 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Optional: background color to make it stand out */
-  border-radius: 50%; /* Makes the image container circular */
-  border: solid var(--secondary-color) 1px; /* Match the border of the box */
+  background-color: white; 
+  border-radius: 50%; 
+  border: solid var(--secondary-color) 1px; 
   line-height: 0;
 }
 
@@ -646,6 +687,157 @@ li {
 }
  
 /*Projects Style */
+.proj-hero {
+  text-align: center;
+  color: #F3F3F3;
+}
+.proj-hero h1 {
+  color: #F3F3F3;
+  padding-bottom: 10px;
+}
+
+.icon-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-list li {
+  margin: 20px;
+  text-align: center;
+  flex: 1 1 30%;
+  position: relative;
+}
+
+.icon-container {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-title {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.icon-container:hover {
+  transform: scale(1.1);
+}
+
+#inr-key h5 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+#inr-key h2 {
+  margin-bottom: 20px;
+}
+
+.benefits-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.benefits-section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 100%;
+  margin-right: 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon-wrapper img{
+  width: 50px;
+  height: 50px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.benefits-section li:hover .icon-wrapper,
+.benefits-section li:hover .icon-wrapper i {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.benefits-section li span {
+  font-weight: bold;
+}
+
+.custom-dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1000; 
+  max-width: 300px; 
+}
+
+.dropdown-card {
+  flex: 1 1 100%; 
+  margin-bottom: 10px;
+}
+
+.dropdown-card h5 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.dropdown-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.custom-dropdown {
+  overflow: hidden;
+}
+
+.partnership-invitation { 
+  padding: 40px 0;
+  text-align: center;
+  color: #fff; 
+}
+
+.partnership-invitation h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-link {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  background-color: #008374; 
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--secondary-color) /* Darken on hover */
+}
+
 
 
 /*Partner style*/
@@ -939,6 +1131,7 @@ footer {
   font-weight: bold;
   margin-bottom: 20px;
   color: #fff;
+  text-align: start;
 }
 
 .footer p {

@@ -37,14 +37,72 @@ if (selectHeader) {
 }
 
 
-document.addEventListener('scroll', function() {
-  var header = document.getElementById('header-diff');
-  if (window.scrollY > 50) { // Adjust this value as needed
-    header.classList.add('sticked');
+// JavaScript to change header background on scroll
+window.addEventListener('scroll', function() {
+  var header = document.querySelector('.custom-header');
+  if (window.scrollY > 50) { // Adjust scroll distance to trigger the effect
+    header.classList.add('scrolled');
   } else {
-    header.classList.remove('sticked');
+    header.classList.remove('scrolled');
   }
 });
+
+
+$(document).ready(function() {
+  $('.icon-container').on('click', function() {
+      var title = $(this).data('title');
+      var description = $(this).data('description');
+
+      $('#descriptionModalLabel').text(title);
+      $('#descriptionText').text(description);
+
+      $('#descriptionModal').modal('show');
+  });
+
+  AOS.init(); // Initialize AOS (Animate On Scroll) library
+});
+
+document.querySelectorAll('.icon-container').forEach(function(element) {
+  element.addEventListener('click', function(event) {
+
+      const title = this.getAttribute('data-title');
+      const description = this.getAttribute('data-description');
+
+      let dropdown = document.createElement('div');
+      dropdown.classList.add('custom-dropdown');
+      
+      dropdown.innerHTML = `
+          <div class="dropdown-card">
+              <h5>${title}</h5>
+              <p>${description}</p>
+          </div>
+      `;
+
+      let existingDropdown = document.querySelector('.custom-dropdown');
+      if (existingDropdown) {
+          existingDropdown.remove();
+      }
+
+      document.body.appendChild(dropdown);
+
+      const rect = this.getBoundingClientRect();
+
+      const topPosition = window.scrollY + rect.bottom;
+      const leftPosition = window.scrollX + rect.left;
+
+      dropdown.style.position = 'absolute';
+      dropdown.style.top = `${topPosition}px`;
+      dropdown.style.left = `${leftPosition}px`;
+  });
+});
+
+document.addEventListener('click', function(event) {
+  let dropdown = document.querySelector('.custom-dropdown');
+  if (dropdown && !event.target.closest('.icon-container')) {
+      dropdown.remove();
+  }
+});
+
 
 
   /* Active Navigation" */

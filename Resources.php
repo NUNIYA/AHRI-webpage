@@ -7,6 +7,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="Assets/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  <style>
+    .nav-menu {
+  position: relative;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+  position: relative; /* Needed for nested dropdown positioning */
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Nested dropdown positioning to the right */
+.dropdown-content .dropdown-content {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Only show nested dropdown on hover of Teams */
+.dropdown-content .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Prevent the nested dropdown from being visible when hovering over About */
+.dropdown-content .dropdown-content {
+  display: none;
+}
+
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
 </head>
 <body>
   <header>
@@ -53,6 +124,8 @@
             <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
             <ul class="dropdown-content">
               <li><a href="RVMS.html">RVMS</a></li>
+              <li><a href="plan.html">Plan</a></li>
+              <li><a href="activity.html">Activity</a></li>
             </ul>
           </li>
           <li class="dropdown">
@@ -63,18 +136,25 @@
               <li><a href="SCP.html">SCP</a></li>
             </ul>
           </li>
-          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
-          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="Resources.php"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.php"><i class="fas fa-blog"></i> Blog</a></li>
         </ul>
       </nav>
+      
+      
     </div>
   </header>
   
   <div class="coming-soon">
-    <h1 class="section">Coming Soon</h1>
+    <?php
+        include 'coming_soon.php';
+        $contentAvailable = false; 
+        displayContent($contentAvailable);
+    ?>
   </div>
-<!-- footer -->
-<footer id="footer" class="footer" style="width: 100%; bottom: 0; left: 0;">
+  
+ <!-- footer -->
+<footer id="footer" class="footer" style=" width: 100%; bottom: 0; left: 0;">
   <div class="container">
       <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
@@ -93,7 +173,7 @@
               </div>
           </div>
           <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Links</h4>
+              <h4>Useful Links</h4>
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
@@ -102,7 +182,7 @@
               </ul>
           </div>
           <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Links</h4>
+              <h4>Services</h4>
               <ul>
                   <li><a href="NRSP.html">NRSP</a></li>
                   <li><a href="SCP.html">SCP</a></li>
