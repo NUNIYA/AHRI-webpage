@@ -49,18 +49,23 @@
               <li><a href="SCP.html">SCP</a></li>
             </ul>
           </li>
-          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
-          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+          <li><a href="Resources.php"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.php"><i class="fas fa-blog"></i> Blog</a></li>
         </ul>
       </nav>
     </div>
   </header>
   
   <div class="coming-soon">
-    <h1 class="section">Coming Soon</h1>
+    <?php
+        include 'coming_soon.php';
+        $contentAvailable = false; 
+        displayContent($contentAvailable);
+    ?>
   </div>
-<!-- footer -->
-<footer id="footer" class="footer" style="width: 100%; bottom: 0; left: 0;">
+  
+ <!-- footer -->
+<footer id="footer" class="footer" style=" width: 100%; bottom: 0; left: 0;">
   <div class="container">
       <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
@@ -79,7 +84,7 @@
               </div>
           </div>
           <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Links</h4>
+              <h4>Useful Links</h4>
               <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About</a></li>
@@ -88,7 +93,7 @@
               </ul>
           </div>
           <div class="col-lg-2 col-md-6 footer-links">
-              <h4>Links</h4>
+              <h4>Services</h4>
               <ul>
                   <li><a href="NRSP.html">NRSP</a></li>
                   <li><a href="SCP.html">SCP</a></li>
