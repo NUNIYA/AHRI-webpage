@@ -1250,10 +1250,7 @@ li {
 
 
 /* about page styles */
-.mini-title{
-  font-weight: 700;
-  color: var(--primary-color);
-}
+
 .custom-vertical-line {
   position: relative;
   padding-left: 20px; 
@@ -1314,9 +1311,15 @@ li {
 }
 
 /* programs page styles */
+.mini-title{
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+}
 .box-container {
-  border: 1px solid #e0e0e0;
-  align-items: justify-content-between;
+  border: 1px solid #cecccc;
+  align-items: center;
+  text-align: justify;
   margin: 10px;
   border-radius: 5px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
