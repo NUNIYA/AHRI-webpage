@@ -7,6 +7,77 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="Assets/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+  <style>
+    .nav-menu {
+  position: relative;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+  position: relative; /* Needed for nested dropdown positioning */
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Nested dropdown positioning to the right */
+.dropdown-content .dropdown-content {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Only show nested dropdown on hover of Teams */
+.dropdown-content .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Prevent the nested dropdown from being visible when hovering over About */
+.dropdown-content .dropdown-content {
+  display: none;
+}
+
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
 </head>
 <body>
   <header>
@@ -67,6 +138,8 @@
               <li><a href="Blog.php"><i class="fas fa-blog"></i> Blog</a></li>
           </ul>
       </nav>
+      
+      
     </div>
   </header>
   

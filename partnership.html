@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One Digital Platform for Rabies Prevention</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="Assets/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+  <style>
+    .nav-menu {
+  position: relative;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+  position: relative; /* Needed for nested dropdown positioning */
+}
+
+.dropdown-content li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Nested dropdown positioning to the right */
+.dropdown-content .dropdown-content {
+  top: 0;
+  left: 100%;
+  margin-left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Only show nested dropdown on hover of Teams */
+.dropdown-content .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+/* Prevent the nested dropdown from being visible when hovering over About */
+.dropdown-content .dropdown-content {
+  display: none;
+}
+
+.dropdown-content .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="contact-info">
+        <a href="mailto:xxx@rabie.org"><i class="fas fa-envelope"></i> xxx@rabie.org</a>
+        <a href="tel:+251-9000000"><i class="fas fa-phone"></i> +251-9000000</a>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="nav-container" id="header">
+      <div class="clas1" style="display: flex; justify-content: space-between;">
+        <a href="index.html">
+          <img src="images/mhrplogo.png"  alt="" class="logo">
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="overlay"></div>
+      </div>
+      <nav class="nav-menu">
+        <ul class="nav-links">
+          <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-info-circle"></i> About</a>
+            <ul class="dropdown-content">
+              <li><a href="program.html">Programs</a></li>
+              <li class="dropdown">
+                <a href="#">Teams</a>
+                <ul class="dropdown-content">
+                  <li><a href="researchers.html">Researchers</a></li>
+                  <li><a href="digitalization.html">Digitalization</a></li>
+                  <li><a href="operational.html">Operational</a></li>
+                </ul>
+              </li>
+              <li><a href="partnership.html">Partnership</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
+            <ul class="dropdown-content">
+              <li><a href="RVMS.html">RVMS</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#"><i class="fas fa-project-diagram"></i> Projects</a>
+            <ul class="dropdown-content">
+              <li><a href="INRVMS.html">INRVMS</a></li>
+              <li><a href="NRSP.html">NRSP</a></li>
+              <li><a href="SCP.html">SCP</a></li>
+            </ul>
+          </li>
+          <li><a href="Resources.html"><i class="fas fa-book"></i> Resource</a></li>
+          <li><a href="Blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        </ul>
+      </nav>
+      
+      
+    </div>
+  </header>
+
+  <main>
+    <section class="section1">
+      <div class="container">
+        <h2 class="text-center pb-2">Partnership</h2>
+        <p class="box-container">The Ethiopian Ministry of Health, in collaboration with the Ministry of Agriculture, is seeking to eliminate human rabies in Ethiopia by 2030. To achieve this ambitious goal, we invite partnerships and funding from government agencies, non-governmental organizations, international organizations, and private sector entities.</p>
+        <h3 class="text-center p-3">Partnership Opportunities</h3>
+        <ul class="box-container">
+          <p><span>We invite partners to contribute to the program in various ways, including:</span></p>
+          <li><i class="bi bi-check-lg p-2"></i>Financial Support: Provide funding for program activities such as vaccine procurement, training, equipment, and infrastructure development.</li>
+          <li><i class="bi bi-check-lg p-2"></i>Technical Assistance: Offer expertise in areas such as veterinary medicine, public health, epidemiology, and disease surveillance.</li>
+          <li><i class="bi bi-check-lg p-2"></i>In-Kind Contributions: Donate equipment, supplies, or services to support program implementation.</li>
+          <li><i class="bi bi-check-lg p-2"></i>Community Engagement: Collaborate on public health education campaigns and community outreach initiatives.</li>
+          <li><i class="bi bi-check-lg p-2"></i>Research and Development: Contribute to research projects aimed at improving rabies prevention and control strategies.</li>
+        </ul>
+
+        <div class="row align-items-center m-5">
+          <div class="col-md-6">
+            <img src="images/about page/TeamImage.jpg" class="img-fluid" alt="Funding Priorities Image">
+          </div>
+          <div class="col-md-6">
+            <div class="sections">
+              <h3>Funding Priorities</h3>
+            <ul>
+              <li><i class="bi bi-check-lg p-2"></i>Mass Dog Vaccination: Procurement of rabies vaccines, training of vaccinators, and logistics support.</li>
+              <li><i class="bi bi-check-lg p-2"></i>Post-Exposure Prophylaxis: Establishment of PEP centers, training of healthcare providers, and access to PEP medications.</li>
+              <li><i class="bi bi-check-lg p-2"></i>Surveillance and Diagnostics: Strengthening laboratory capacity, training of laboratory personnel, and development of surveillance systems.</li>
+              <li><i class="bi bi-check-lg p-2"></i>Public Health Education: Development of educational materials, training of community health workers, and dissemination of information.</li>
+              <li><i class="bi bi-check-lg p-2"></i>Intersectoral Collaboration: Coordination meetings, joint planning, and information sharing.</li>
+            </ul>
+            </div>
+          </div>
+          </div>
+
+        <h3 class="text-center">Benefits of Partnership</h3>
+        <p class="box-container">By partnering with us, you will have the opportunity to contribute to a critical public health issue, improve the lives of millions of Ethiopians, and strengthen the country's health systems. You will also gain visibility, recognition, and opportunities for collaboration on other health initiatives.</p>
+      </div>
+    </section>
+    <section class="section2">
+      <div class="container">
+        <div class="contact-us">
+          <h2 class="text-center p-2">Contact Information</h2>
+          <div class="sections p-5">
+            <p>For more information or to express your interest in partnering with us, please contact:</p>
+            <div class="sections m-2">[Name]</div>
+            <div class="sections m-2">[Title]</div>
+            <div class="sections m-2">[AHRI] </div>
+            <div class="sections m-2">[Address] </div>
+            <div class="sections m-2">[Email]</div>
+            <div class="sections m-2">[Phone Number]</div>
+            <p class="mt-3">We look forward to working together to achieve our shared goal of eliminating rabies in Ethiopia.</p>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    <section class="section1">
+      <div class="container">
+        <div class="">
+          <h3 class="text-center pb-2">Our Partners</h3>
+          <!-- short description about partners contribution can be inserted here -->
+        <div class="row partner-logos g-2">
+          <!-- Partner Logos -->
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/MOH logo.png" class="img-fluid" alt="Partner 1 Logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/EPHI.png" class="img-fluid" alt="Partner 2 Logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/NVI.png" class="img-fluid" alt="Partner 2 Logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/AHRI.png" class="img-fluid" alt="Partner 2 Logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/IVI.png" class="img-fluid" alt="Partner 2 Logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/AU.png" class="img-fluid" alt="Partner 2 Logo">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 mb-1">
+            <img src="images/partner logos/AfricaCDC.png" class="img-fluid" alt="Partner 2 Logo">
+          </div>
+          <!-- Add more logos as needed -->
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+ <!-- footer -->
+<footer id="footer" class="footer" style=" width: 100%; bottom: 0; left: 0;">
+  <div class="container">
+      <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+              <div class="logo-container">
+                  <a href="index.html" class="logo">
+                      <img src="images/mhrplogo.png" alt="Company Logo" class="img-fluid">
+                  </a>
+              </div>
+              <div class="social-text">
+                  <p>Connect with us on social media</p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                  <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                  <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                  <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+              </div>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="RVMS.html">RVMS</a></li>
+                  <li><a href="INRVMS.html">INRVMS</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Services</h4>
+              <ul>
+                  <li><a href="NRSP.html">NRSP</a></li>
+                  <li><a href="SCP.html">SCP</a></li>
+                  <li><a href="Resources.html">Resources</a></li>
+                  <li><a href="Blog.html">Blog</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-4">
+    <div class="copyright">
+        <p>&copy; 2024 One Digital Platform for Rabies Prevention. All rights reserved.</p>
+    </div>
+      <div class="credits">
+          Designed by <a href="https://dartdigitaltech.com/">Dart Digital Technologies PLC</a>
+      </div>
+  </div>
+</footer>
+<!-- end of footer-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="Assets/main.js"></script>
+</body>
+</html>
