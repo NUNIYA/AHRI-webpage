@@ -8,86 +8,12 @@
   <link rel="stylesheet" href="Assets/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 
   <style>
-
-body{
+    body{
     background-color: #F3F3F3;
-    min-height: 100vh;
-    margin: 0;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-}
-    
-.nav-menu {
-  position: relative;
-}
-
-.nav-links {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-links > li {
-  display: inline-block;
-  position: relative;
-}
-
-.nav-links > li > a {
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content li {
-  display: block;
-  position: relative; /* Needed for nested dropdown positioning */
-}
-
-.dropdown-content li a {
-  padding: 10px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover > .dropdown-content {
-  display: block;
-}
-
-/* Nested dropdown positioning to the right */
-.dropdown-content .dropdown-content {
-  top: 0;
-  left: 100%;
-  margin-left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-/* Only show nested dropdown on hover of Teams */
-.dropdown-content .dropdown:hover > .dropdown-content {
-  display: block;
-}
-
-/* Prevent the nested dropdown from being visible when hovering over About */
-.dropdown-content .dropdown-content {
-  display: none;
-}
-
-.dropdown-content .dropdown:hover .dropdown-content {
-  display: block;
-}
-
+  }
   </style>
 </head>
 <body>
@@ -158,16 +84,17 @@ body{
   <main>
     <section id="goals" class="section2">
       <div class="container">
-        <p class="box-container"><span class="mini-title">Rabies Tech Watch</span> is a comprehensive digital platform designed to enhance rabies prevention and control efforts in Ethiopia. By leveraging technology, this program aims to improve surveillance, vaccination, and community engagement to reduce the burden of rabies.</p>
-        <div class="row p-3 align-items-center justify-content-between">
-          
-          <div class="col-md m-3">
+        <div class="row align-items-center g-3">
+          <div class="box-container col-12"  data-aos="fade-up" data-aos-delay="100">
+            <p style="font-weight: 500;"><span class="mini-title">Rabies Tech Watch</span> is a comprehensive digital platform designed to enhance rabies prevention and control efforts in Ethiopia. By leveraging technology, this program aims to improve surveillance, vaccination, and community engagement to reduce the burden of rabies.</p>
+          </div>
+          <div class="col-md"  data-aos="fade-right" data-aos-delay="200">
             <img src="images/about page/rabies vaccine.webp" alt="" class="img-fluid">
           </div>
-          <div class="col-md box-container">
+          <div class="col-md box-container" data-aos="fade-left" data-aos-delay="200">
             <div class="d-flex justify-content-center align-items-center mb-3">
               <img src="images/about page/goals.png" class="img-fluid me-2" width="48px" height="48px" alt="Goals Icon">
-              <h3 class="text-center mb-0">GOALS</h3>
+              <h3 class="text-center mb-0"><span>GOALS</span></h3>
             </div>
             <ul style="text-align: center;">
               <li><i class="bi bi-check-lg p-2"></i>Reduce human rabies deaths to zero by 2030.</li>
@@ -177,13 +104,12 @@ body{
               <li><i class="bi bi-check-lg p-2"></i>Promote responsible dog ownership and management.</li>
             </ul>
           </div>
-          
-        </div>      
+        </div> 
       </div>
     </section>
 
-    <div class="container">
-      <h2 class="p-4">Strategies</h2>
+    <div class="container" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-center m-3"><span>STRATEGIES</span></h3>
       <div class="slider m-4">
         <div class="item">
             <h4><span class="mini-title"> Mass Dog Vaccination</span></h4>
@@ -237,38 +163,37 @@ body{
         </div>
         <button id="next">></button>
         <button id="prev"><</button>
+      </div>
     </div>
-
-    </div>
-      
-
-    
 
     <section id="expected-outcomes" class="section2">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md box-container">
-            <h3 class="text-center pb-3">EXPECTED OUTCOMES</h3>
-            <ul>
-              <li>Significant reduction in human rabies cases and deaths.</li>
-              <li>Increased awareness and adoption of rabies prevention practices.</li>
-              <li>Improved surveillance and diagnostic capabilities.</li>
-              <li>Strengthened collaboration between human and animal health sectors.</li>
-              <li>Controlled dog populations and responsible pet ownership practices.</li>
-            </ul>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 d-flex align-items-stretch mb-3" data-aos="fade-right" data-aos-delay="400">
+            <div class="box-container">
+              <h4 class="text-center pb-3"><span>EXPECTED OUTCOMES</span></h4>
+              <ul>
+                <li><i class="bi bi-check-lg p-1"></i>Significant reduction in human rabies cases and deaths.</li>
+                <li><i class="bi bi-check-lg p-1"></i>Increased awareness and adoption of rabies prevention practices.</li>
+                <li><i class="bi bi-check-lg p-1"></i>Improved surveillance and diagnostic capabilities.</li>
+                <li><i class="bi bi-check-lg p-1"></i>Strengthened collaboration between human and animal health sectors.</li>
+                <li><i class="bi bi-check-lg p-1"></i>Controlled dog populations and responsible pet ownership practices.</li>
+              </ul>
+            </div>
           </div>
-          <div class="col-md p-5 box-container">
-            <h3 class="text-center pb-3">PARTNERSHIPS AND FUNDING</h3>
-            <ul>
-              <li>Collaborate with government agencies, NGOs, international organizations, and local communities.</li>
-              <li>Secure funding from various sources, including government budgets, international donors, and private sector partners.</li>
-              <li>Ensure sustainable funding to support long-term implementation of the program.</li>
-            </ul>
+          <div class="col-md-6 d-flex align-items-stretch mb-3" data-aos="fade-left" data-aos-delay="400">
+            <div class="box-container">
+              <h3 class="text-center pb-3"><span>PARTNERSHIPS AND FUNDING</span></h3>
+              <ul>
+                <li><i class="bi bi-check-lg p-1"></i>Collaborate with government agencies, NGOs, international organizations, and local communities.</li>
+                <li><i class="bi bi-check-lg p-1"></i>Secure funding from various sources, including government budgets, international donors, and private sector partners.</li>
+                <li><i class="bi bi-check-lg p-1"></i>Ensure sustainable funding to support long-term implementation of the program.</li>
+              </ul>
+            </div>
           </div>
         </div>  
       </div>
     </section>
-    
   </main>
 
  <!-- footer -->
@@ -319,10 +244,23 @@ body{
       </div>
   </div>
 </footer>
+
 <!-- end of footer-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="Assets/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 1000,
+        once: true,     
+        offset: 100  
+      });
+    });
+  </script>
+  
 </body>
 </html>
