@@ -992,106 +992,6 @@ li {
   color: green;
 }
 
-/*RVMS style*/
-.bg-primary-custom {
-  background-color: var(--primary-color);
-  color: var(--text-color);
-  border-radius: 20px;
-}
-#align-p .card-body {
-  height: 220px; /* Reduced from 250px */
-  display: flex;
-  flex-direction: column;
-}
-
-#align-p  .card-title {
-  height: 50px; 
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.5rem;
-}
-
-#align-p  .card-text {
-  flex-grow: 1;
-  display: flex;
-  align-items: flex-start; 
-  margin-bottom: 0; 
-}
-.card {
-  border: none;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.card h3{
-  color: #008374;
-}
-
-.bg-primary-custom h2 {
-  color: white;
-  border-bottom: none; 
-  padding-bottom: 0;
-}
-.bg-primary-custom .card-title,
-.bg-primary-custom .card-text {
-  color:var(--text-color);
-}
-.rvms-image {
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  max-width: 100%; 
-  margin-bottom: 20px;
-  height: 50px;
-}
-
-.container.mt-5.fade-in {
-  background-color: #ffffff; 
-  padding: 30px; 
-  border-radius: 15px; 
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
-}
-
-.text-justify {
-  text-align: justify; 
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.fade-in.is-visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-.card-style .card {
-  border: none;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.card-style .card:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-.bg-primary-custom .btn-primary {
-  background-color: #008374;
-  border-color: #008374;
-  color: #fff;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
-  align-self: flex-start;
-}
-
-.bg-primary-custom .btn-primary:hover {
-  background-color: #d4af37;
-  border-color: #d4af37;
-}
 
 /* Scroll Animation Styles */
 .fade-in {
@@ -1110,14 +1010,12 @@ li {
 /* Plan page style */
 .intervention-area {
   padding: 50px 0;
-  background-color: #f8f9fa;
 }
 
 .intervention-category {
   height: 100%;
   padding: 25px;
   margin-bottom: 30px;
-  background-color: #ffffff;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -1176,7 +1074,6 @@ li {
 
 .impact-section {
   padding: 60px 0;
-  background-color:#f8f9fa;
   position: relative;
   overflow: hidden;
 }

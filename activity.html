@@ -8,6 +8,153 @@
   <link rel="stylesheet" href="Assets/main.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
 </head>
+<style>
+    /* New styles for enhanced visual appeal */
+    .section {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
+
+    .section h2, .section h3, .section h4 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section h2::after, .section h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background-color: #3498db;
+      transition: width 0.3s ease-in-out;
+    }
+
+    .section h2:hover::after, .section h3:hover::after {
+      width: 100px;
+    }
+
+    .feature-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      color: #3498db;
+      margin-bottom: 20px;
+    }
+
+    .feature-card h4 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .feature-card ul {
+      padding-left: 20px;
+    }
+
+    .feature-card li {
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .feature-card li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      color: #2ecc71;
+      margin-right: 10px;
+      position: absolute;
+      left: -20px;
+    }
+
+    .benefits-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .benefit-item {
+      flex-basis: calc(50% - 15px);
+      margin-bottom: 20px;
+      background-color: #ecf0f1;
+      border-radius: 5px;
+      padding: 15px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .benefit-item:hover {
+      background-color: #3498db;
+      color: #ffffff;
+    }
+
+    .benefit-item i {
+      margin-right: 10px;
+      color: #e74c3c;
+    }
+
+    .partnership-invitation {
+      background-color: #3498db;
+      color: #ffffff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .partnership-invitation h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Animation for feature cards */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feature-card {
+      animation: fadeInUp 0.5s ease-out;
+      animation-fill-mode: both;
+    }
+
+    .feature-card:nth-child(1) { animation-delay: 0.1s; }
+    .feature-card:nth-child(2) { animation-delay: 0.2s; }
+    .feature-card:nth-child(3) { animation-delay: 0.3s; }
+    .feature-card:nth-child(4) { animation-delay: 0.4s; }
+    .feature-card:nth-child(5) { animation-delay: 0.5s; }
+
+  </style>
 <body>
   <header>
     <div class="topbar">
@@ -53,7 +200,7 @@
                 <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
                 <ul class="dropdown-content">
                     <li><a href="plan.html">Plan</a></li>
-                  <li><a href="activity.html">Activity</a></li>
+                  <li><a href="activity.html">Active</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -70,31 +217,113 @@
     </nav>
     </div>
   </header>
+  <section class="section1" style="background-color: var(--primary-color);">
+    <div class="proj-hero container">
+        <h1>Digital Rabies Vaccination Management System (RVMS)</h1>
+        <p>A digital Rabies Vaccination Management System (RVMS) can significantly improve the efficiency and effectiveness of rabies prevention and control efforts. By providing a centralized platform for data collection, analysis, and dissemination, an RVMS can support evidence-based decision making and enhance the overall impact of rabies vaccination programs.</p>
+    </div>
+  
+  <section class="section">
+    <div class="container">
+        <h3>Key Features of a Rabies Vaccination Management System</h3>
 
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-card">
+              <i class="fas fa-user-md feature-icon"></i>
+              <h4>Patient Data Management</h4>
+              <ul>
+                <li><strong>Comprehensive patient records:</strong> Store detailed information about each patient, including demographics, vaccination history, exposure incidents, and treatment outcomes.</li>
+                <li><strong>Centralized database:</strong> Ensure easy access to patient data from multiple locations, reducing the risk of data duplication or loss.</li>
+                <li><strong>Data privacy and security:</strong> Implement robust measures to protect patient confidentiality.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card">
+              <i class="fas fa-syringe feature-icon"></i>
+              <h4>Vaccination Inventory and Tracking</h4>
+              <ul>
+                <li><strong>Real-time inventory management:</strong> Monitor vaccine stock levels and expiration dates to prevent shortages or wastage.</li>
+                <li><strong>Automated tracking:</strong> Record the administration of vaccines, including date, time, and location.</li>
+                <li><strong>Lot number tracking:</strong> Trace the origin of vaccines to identify any potential issues.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-card">
+              <i class="fas fa-chart-line feature-icon"></i>
+              <h4>Risk Assessment and Surveillance</h4>
+              <ul>
+                <li><strong>Risk assessment tools:</strong> Evaluate the risk of rabies exposure for different populations and geographic areas.</li>
+                <li><strong>Surveillance data collection:</strong> Gather information on rabies cases, animal bites, and vaccination coverage.</li>
+                <li><strong>Data analysis and reporting:</strong> Generate reports on rabies trends, vaccination rates, and outbreak investigations.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-card">
+              <i class="fas fa-brain feature-icon"></i>
+              <h4>Decision Support Tools</h4>
+              <ul>
+                <li><strong>Epidemiological modeling:</strong> Use mathematical models to predict the spread of rabies and evaluate the effectiveness of control measures.</li>
+                <li><strong>Cost-benefit analysis:</strong> Assess the economic impact of different rabies prevention strategies.</li>
+                <li><strong>Optimization algorithms:</strong> Identify the most efficient allocation of resources for vaccination campaigns.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-6">
+            <div class="feature-card">
+              <i class="fas fa-network-wired feature-icon"></i>
+              <h4>Integration with Other Systems</h4>
+              <ul>
+                <li><strong>Health information systems:</strong> Connect the RVMS to existing health information systems to facilitate data sharing and analysis.</li>
+                <li><strong>Geographic information systems (GIS):</strong> Integrate spatial data to visualize rabies cases, vaccination coverage, and risk factors.</li>
+                <li><strong>Mobile applications:</strong> Develop mobile apps for healthcare providers and the public to access vaccination information and report animal bites.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        <h3>Benefits of a Rabies Vaccination Management System</h3>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <strong>Improved efficiency:</strong> Streamline administrative tasks and reduce paperwork.
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-chart-pie"></i>
+            <strong>Enhanced decision-making:</strong> Provide data-driven insights to support evidence-based decision-making.
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-shield-alt"></i>
+            <strong>Improved vaccination coverage:</strong> Increase access to rabies vaccination, especially in remote or underserved areas.
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-search"></i>
+            <strong>Enhanced surveillance:</strong> Monitor rabies trends and identify potential outbreaks early.
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-dollar-sign"></i>
+            <strong>Cost-effective:</strong> Optimize resource allocation and reduce the overall cost of rabies prevention.
+          </div>
+        </div>
+    </div>
+  </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <section class="partnership-invitation">
+    <div class="container">
+      <h2><i class="fas fa-handshake"></i> Join Us in the Fight Against Rabies</h2>
+      <p>If you are interested in joining this project as a partner, please contact us. Together, we can make a difference!</p>
+    </div>
+  </section>
+  
    <!-- footer -->
 <footer id="footer" class="footer">
     <div class="container">
@@ -148,5 +377,32 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="Assets/main.js"></script>
+    <script>
+        // Add this script to enable animations when scrolling
+        function isElementInViewport(el) {
+          var rect = el.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+    
+        function handleScrollAnimations() {
+          var elements = document.querySelectorAll('.feature-card, .benefit-item');
+          elements.forEach(function(element) {
+            if (isElementInViewport(element)) {
+              element.style.visibility = 'visible';
+              element.style.opacity = '1';
+              element.style.transform = 'translateY(0)';
+            }
+          });
+        }
+    
+        window.addEventListener('scroll', handleScrollAnimations);
+        window.addEventListener('resize', handleScrollAnimations);
+        window.addEventListener('load', handleScrollAnimations);
+      </script>
   </body>
   </html>
