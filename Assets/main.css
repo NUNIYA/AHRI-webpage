@@ -1102,6 +1102,150 @@ li {
   transform: translateY(0);
 }
 
+
+
+/* Plan page style */
+.intervention-area {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.intervention-category {
+  height: 100%;
+  padding: 25px;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.intervention-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.intervention-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.intervention-category:hover .intervention-icon {
+  transform: scale(1.1);
+}
+
+.intervention-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.intervention-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.intervention-list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.intervention-list li i {
+  color: #007bff;
+  margin-right: 12px;
+  margin-top: 5px;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.intervention-list li span {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.intervention-list li strong {
+  color: #333;
+}
+
+.impact-section {
+  padding: 60px 0;
+  background-color:#f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+.impact-content {
+  position: relative;
+  z-index: 2;
+}
+
+.impact-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path/to/your/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.impact-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.impact-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.impact-list li i {
+  font-size: 2rem;
+  margin-right: 15px;
+  color: #007bff;
+}
+
+.impact-list li h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.impact-list li p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* about page styles */
 
 .mini-title{
