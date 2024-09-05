@@ -1,3 +1,6 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Colors */
 :root {
   --primary-color: #8C5C5C;
@@ -1103,10 +1106,10 @@ li {
 }
 
 /* about page styles */
-/* .mini-title{
+.mini-title{
   font-weight: 700;
   color: var(--primary-color);
-} */
+}
 .custom-vertical-line {
   position: relative;
   padding-left: 20px; 
@@ -1167,8 +1170,18 @@ li {
 }
 
 /* programs page styles */
+.box-container {
+  border: 1px solid #e0e0e0;
+  align-items: justify-content-between;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: white;
+}
+
 #goals ul{
-  list-style-type:circle;
+  list-style-type:none;
 }
 
 .slider{
@@ -1228,6 +1241,7 @@ li {
   border: 2px solid black;
   position: relative;
   margin: auto;
+  position: relative;
 }
 
 .profile_image{
@@ -1358,11 +1372,71 @@ font-weight: 300;
     width: 90%;
   }
 }
-
-
 /* end of digitalization */
 
- 
+/* researchers page*/
+
+/* end of  researchers page*/
+.slider-wrapper{
+  font-family: "Montserrat", sans-serif;
+}
+.researchers{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+
+.card_list .card_item{
+  color: #fff;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  padding: 35px;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.5);
+  backdrop-filter: blur(30px);
+}
+
+.card_list .card_item .researcher_img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+  border: 3px solid #fff;
+  padding: 4px;
+}
+
+.card_list .card_item .researcher_profession{
+  font-size: 1.15rem;
+  color: #e3e3e3;
+  font-weight: 500;
+  margin: 14px 0 40px;
+}
+
+.card_list .card_item .message_button{
+  font-size: 1.25rem;
+  padding: 10px 35px;
+  color: var(--text-color);
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.card_list .card_item .message_button:hover{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1pxsolid #fff;
+  color: #fff;
+}
+
+
+
 /* coming soon */
 .coming-soon {
   display: flex;
