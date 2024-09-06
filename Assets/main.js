@@ -155,22 +155,37 @@ document.addEventListener('click', function(event) {
     var homeLink = document.querySelector('.nav-links a[href="index.html"]');
     var activeLink = null;
     navLinks.forEach(function(link) {
-      var linkHref = link.getAttribute('href').toLowerCase();
-      if (linkHref === currentPage) {
-        activeLink = link;
-      }
+        var linkHref = link.getAttribute('href').toLowerCase();
+        if (linkHref === currentPage) {
+            activeLink = link;
+        }
     });
     if (!activeLink || currentPage === "" || currentPage === "index.html") {
-      activeLink = homeLink;
+        activeLink = homeLink;
     }
     if (activeLink) {
-      activeLink.classList.add('active');
-      var dropdown = activeLink.closest('.dropdown');
-      if (dropdown) {
-        dropdown.classList.add('active');
-      }
+        activeLink.classList.add('active');
+        var parentDropdown = activeLink.closest('.dropdown-content');
+        if (parentDropdown) {
+            var dropdownParent = parentDropdown.closest('.dropdown');
+            if (dropdownParent) {
+                dropdownParent.querySelector('a').classList.add('active');
+                var grandParentDropdown = dropdownParent.closest('.dropdown-content');
+                if (grandParentDropdown) {
+                    var grandParent = grandParentDropdown.closest('.dropdown');
+                    if (grandParent) {
+                        grandParent.querySelector('a').classList.add('active');
+                    }
+                }
+            }
+        }
+        var topDropdown = activeLink.closest('.dropdown');
+        if (topDropdown) {
+            topDropdown.querySelector('a').classList.add('active');
+        }
     }
-  });
+});
+
 
   
 /* subtle fade-in effect for elements with the "fade-in" class */
