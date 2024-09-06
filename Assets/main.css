@@ -1233,16 +1233,6 @@ li {
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.2);
 }
-.box-container3 {
-  border: 1px solid #cecccc;
-  align-items: center;
-  text-align: justify;
-  margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.1);
-}
 
 #goals ul{
   list-style-type:none;
@@ -1397,7 +1387,7 @@ font-weight: 300;
   font-weight: 600;
 }
 
-.custom-accordion li input[type="radio"]{
+.custom-accordion li input[type="checkbox"]{
   display: none;
 }
 
@@ -1410,12 +1400,12 @@ font-weight: 300;
   transition: max-height 0.5s, padding 0.5s;
 }
 
-.custom-accordion input[type="radio"]:checked + label + .content-accordion{
+.custom-accordion input[type="checkbox"]:checked + label + .content-accordion{
   max-height: 500px;
   padding: 10px 10px 20px;
 }
 
-.custom-accordion input[type="radio"]:checked + label::before{
+.custom-accordion input[type="checkbox"]:checked + label::before{
   content: '-';
 }
 
