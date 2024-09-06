@@ -1126,6 +1126,32 @@ li {
   font-size: 1rem;
   color: #555;
 }
+.impact-list li {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.impact-list li.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.impact-list li.animate-out {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .impact-list li {
+      transform: translateX(30px);
+  }
+  
+  .impact-list li.animate-out {
+      transform: translateX(30px);
+  }
+}
 
 
 /* about page styles */
