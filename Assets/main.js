@@ -263,4 +263,3 @@ let items = document.querySelectorAll('.slider .item');
 
     
   
-
