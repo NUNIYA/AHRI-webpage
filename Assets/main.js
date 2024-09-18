@@ -264,3 +264,25 @@ let items = document.querySelectorAll('.slider .item');
     
   
 
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+          duration: 1000,
+          once: true,     
+          offset: 100  
+      });
+  
+      const toggleButton = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      const overlay = document.querySelector('.overlay');
+  
+      toggleButton.addEventListener('click', function() {
+          navMenu.classList.toggle('active');
+          overlay.classList.toggle('active');
+      });
+  
+      overlay.addEventListener('click', function() {
+          navMenu.classList.remove('active');
+          overlay.classList.remove('active');
+      });
+  });
+  
