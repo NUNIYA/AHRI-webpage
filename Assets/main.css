@@ -524,7 +524,7 @@ h2 {
 }
 
 .logo-container img {
-  max-width: 150px;
+  max-width: 100px;
   height: fit-content;
   transition: transform 0.3s ease;
   opacity: 0.9; 
