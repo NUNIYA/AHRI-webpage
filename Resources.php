@@ -123,7 +123,6 @@
               <li class="dropdown">
                   <a href="#"><i class="fas fa-tools"></i> D-Tools</a>
                   <ul class="dropdown-content">
-                      <li><a href="RVMS.html">RVMS</a></li>
                       <li><a href="plan.html">Plan</a></li>
                     <li><a href="activity.html">Activity</a></li>
                   </ul>
@@ -154,14 +153,14 @@
   </div>
   
  <!-- footer -->
- <footer class="site-footer">
+<footer class="site-footer">
   <div class="footer-content">
       <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
               <li><a href="index.html">Home</a></li>
-              <li><a href="plan.html"></a>Plan</li>
-              <li><a href="activity.html"></a>Active</li>
+              <li><a href="plan.html">Plan</a></li>
+              <li><a href="activity.html">Active</a></li>
               <li><a href="Resources.php">Resource</a></li>
               <li><a href="Blog.php">Blog</a></li>
           </ul>
@@ -170,9 +169,9 @@
           <h3>About Us</h3>
           <ul>
               <li><a href="program.html">Program</a></li>
-              <li><a href="researchers.html"></a>Research</li>
-              <li><a href="digitalization.html"></a>Digitalization</li>
-              <li><a href="operational.html"></a>Operational</li>
+              <li><a href="researchers.html">Research</a></li>
+              <li><a href="digitalization.html">Digitalization</a>
+              <li><a href="operational.html">Operational</a></li>
               <li><a href="partnership.html">Partnership</a></li>
           </ul>
       </div>
@@ -187,7 +186,7 @@
       <div class="footer-section">
           <h3>Contact Us</h3>
           <p>Email: info@example.com</p>
-          <p>Phone: +1 (123) 456-7890</p>
+          <p>Phone: +251 900 0000</p>
           <div class="social-icons">
               <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
               <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
