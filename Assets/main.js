@@ -252,13 +252,17 @@ let items = document.querySelectorAll('.slider .item');
     }
     loadShow();
     next.onclick = function(){
-        active = active + 1 < items.length ? active + 1 : active;
-        loadShow();
+      active = (active + 1) % items.length; 
+      loadShow();
     }
     prev.onclick = function(){
-        active = active - 1 >= 0 ? active - 1 : active;
-        loadShow();
+      active = (active - 1 + items.length) % items.length; 
+      loadShow();
     }
+
+    setInterval(function() {
+      next.click(); 
+  }, 3000); 
 
 
     
